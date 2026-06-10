@@ -1,11 +1,17 @@
-# Use the lightweight Nginx image
-FROM nginx:alpine
+# Use official Python runtime as a parent image
+FROM python:3.10-slim
 
-# Copy all files from the current directory to the Nginx HTML folder
-COPY . /usr/share/nginx/html
+# Set the working directory
+WORKDIR /app
 
-# Expose port 80 so Render can route traffic to it
+# Copy the current directory contents into the container
+COPY . /app
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose port 80 for Render
 EXPOSE 80
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Run FastAPI with Uvicorn
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]

@@ -76,35 +76,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let finalQuestionText = text;
         
-        // 5. LLM Rephrasing via Local Ollama (Keyless)
+        // 5. LLM Rephrasing via Python Backend
         try {
-            const response = await fetch("http://localhost:11434/api/chat", {
+            const response = await fetch("/api/rephrase", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    model: "llama3", // Assuming llama3 is installed locally
-                    messages: [
-                        { role: "system", content: "You are an expert Endodontist. Rewrite the provided clinical scenario to improve the language and flow so it reads naturally like a concise, professional dental case study. CRITICAL RULES: 1. Do NOT add any extra information, descriptive fluff, or explanations/interpretations of the test results. Just report the clinical facts exactly as provided. 2. Do NOT attempt to diagnose the patient or include the actual diagnosis in your output. 3. Your output MUST end exactly with the question 'What is the final diagnosis?'. Only output the rewritten paragraph." },
-                        { role: "user", content: "A 42-year-old female presents with a chief complaint of 'pain'. The tooth responds Lingering to cold. The percussion test is Positive and palpation is Negative. Radiographs reveal Radiolucency. Swelling/sinus tracts are Absent. What is the final diagnosis?" },
-                        { role: "assistant", content: "A 42-year-old female patient presents to the clinic with a chief complaint of pain. Clinical examination reveals a lingering response to cold testing. The tooth is tender to percussion, but palpation is negative. Radiographic evaluation shows a periapical radiolucency, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?" },
-                        { role: "user", content: text }
-                    ],
-                    stream: false
+                    question: text
                 })
             });
             
             if (response.ok) {
                 const data = await response.json();
-                if (data.message && data.message.content) {
-                    finalQuestionText = data.message.content;
+                if (data.rephrased) {
+                    finalQuestionText = data.rephrased;
                 }
             } else {
-                console.log("Ollama not running or model not found. Falling back to template.");
+                console.log("Backend error. Falling back to template.");
             }
         } catch (err) {
-            console.log("Could not connect to local Ollama server. Falling back to template.");
+            console.log("Could not connect to backend server. Falling back to template.");
         }
 
         // 6. Generate Feedback
