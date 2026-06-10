@@ -803,13 +803,13 @@
                 "No pain"
             ],
             "History of Pain": [
-                "blank"
+                ""
             ],
             "Pain Duration": [
-                "blank"
+                ""
             ],
             "Pain Character": [
-                "blank"
+                ""
             ],
             "History of Trauma": [
                 "No"
@@ -818,13 +818,13 @@
                 "Previously Initiated"
             ],
             "Cold Test Response": [
-                "blank"
+                ""
             ],
             "Heat Test Response": [
-                "blank"
+                ""
             ],
             "EPT Response": [
-                "blank"
+                ""
             ],
             "Percussion Test": [
                 "Negative"
@@ -871,8 +871,7 @@
                 "No Response"
             ],
             "Heat Test Response": [
-                "No Response",
-                "blank"
+                "No Response"
             ],
             "EPT Response": [
                 "No Response"
@@ -915,13 +914,13 @@
                 "Previously Initiated"
             ],
             "Cold Test Response": [
-                "blank"
+                ""
             ],
             "Heat Test Response": [
-                "blank"
+                ""
             ],
             "EPT Response": [
-                "blank"
+                ""
             ],
             "Percussion Test": [
                 "Positive"
@@ -944,13 +943,13 @@
                 "No pain"
             ],
             "History of Pain": [
-                "blank"
+                ""
             ],
             "Pain Duration": [
-                "blank"
+                ""
             ],
             "Pain Character": [
-                "blank"
+                ""
             ],
             "History of Trauma": [
                 "No"
@@ -962,10 +961,10 @@
                 "No Response"
             ],
             "Heat Test Response": [
-                "blank"
+                ""
             ],
             "EPT Response": [
-                "blank"
+                ""
             ],
             "Percussion Test": [
                 "Negative"
@@ -1049,13 +1048,13 @@
                 "RCT / Previously Treated"
             ],
             "Cold Test Response": [
-                "blank"
+                ""
             ],
             "Heat Test Response": [
-                "blank"
+                ""
             ],
             "EPT Response": [
-                "blank"
+                ""
             ],
             "Percussion Test": [
                 "Negative"
@@ -1081,7 +1080,7 @@
                 "Provoked"
             ],
             "Pain Duration": [
-                "blank"
+                ""
             ],
             "Pain Character": [
                 "Dull"
@@ -1093,13 +1092,13 @@
                 "Previously Treated (RCT)"
             ],
             "Cold Test Response": [
-                "blank"
+                ""
             ],
             "Heat Test Response": [
-                "blank"
+                ""
             ],
             "EPT Response": [
-                "blank"
+                ""
             ],
             "Percussion Test": [
                 "Positive"
@@ -1171,7 +1170,7 @@
                 "Provoked"
             ],
             "Pain Duration": [
-                "blank"
+                ""
             ],
             "Pain Character": [
                 "Sharp"
@@ -1186,10 +1185,10 @@
                 "Exaggerated"
             ],
             "Heat Test Response": [
-                "blank"
+                ""
             ],
             "EPT Response": [
-                "blank"
+                ""
             ],
             "Percussion Test": [
                 "Positive"
@@ -1209,16 +1208,16 @@
         },
         "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis": {
             "Chief Complaint": [
-                "blank"
+                ""
             ],
             "History of Pain": [
-                "blank"
+                ""
             ],
             "Pain Duration": [
-                "blank"
+                ""
             ],
             "Pain Character": [
-                "blank"
+                ""
             ],
             "History of Trauma": [
                 "No"

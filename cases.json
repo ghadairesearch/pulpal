@@ -1,0 +1,652 @@
+[
+    {
+        "id": 1,
+        "question": "A 48-year-old male patient presents with a chief complaint of pain on biting, which is provoked and has a lingering duration with a dull character. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing and heat testing, as well as a normal response to electric pulp testing. The percussion test is positive, and palpation is also positive. Periodontal probing shows normal results. Radiographic evaluation reveals normal findings, and there is no swelling or sinus tracts present. What is the final diagnosis?",
+        "options": [
+            "Previously Initiated with Symptomatic Apical Periodontitis",
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Previously Treated with Chronic Apical Abscess",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 2,
+        "question": "A 32-year-old female patient presents to the clinic with a chief complaint of pain, which is provoked and has a short duration. The pain character is throbbing. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, but normal responses to heat and electric pulp tests. Percussion test is positive, while palpation test is negative. Periodontal probing reveals normal findings. Radiographic evaluation shows normal results. Additionally, there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Chronic Apical Abscess",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Treated with Normal Apical Tissues",
+            "Pulp Necrosis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 3,
+        "question": "A 70-year-old female patient presents to the clinic with a chief complaint of spontaneous pain, characterized as sharp and short in duration. The tooth exhibits an exaggerated response to cold testing, but normal responses to heat and electric pulp tests. Clinical examination reveals negative percussion and palpation test results, as well as normal periodontal probing depths. Radiographic evaluation shows no abnormalities, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Initiated with Chronic Apical Abscess",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Reversible Pulpitis with Normal Apical Tissues",
+            "Previously Initiated with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 4,
+        "question": "A 32-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked and has a short duration. The pain character is described as throbbing. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, but normal responses to heat and electric pulp tests. Percussion and palpation tests are negative, and periodontal probing shows normal findings. Radiographs are unremarkable, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Pulp Necrosis with Symptomatic Apical Periodontitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Reversible Pulpitis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 5,
+        "question": "A 19-year-old female patient presents to the clinic with a chief complaint of pain, which has been spontaneous and lingering in duration. The pain character is described as dull. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, as well as heat testing. Electric pulp testing (EPT) responses are normal. Percussion test and palpation test results are negative. Periodontal probing shows normal findings. Radiographic evaluation does not reveal any abnormalities, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Initiated with Condensing Osteitis",
+            "Pulp Necrosis with Symptomatic Apical Periodontitis",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Treated with Chronic Apical Abscess"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 6,
+        "question": "A 19-year-old female patient presents to the clinic with a chief complaint of pain, which is provoked and has been present for a short duration. The pain has a throbbing character. There is no history of trauma, and the patient has not received previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, but a normal response to heat and electric pulp tests. Percussion testing is positive, while palpation is negative. Periodontal probing shows normal findings. Radiographic evaluation reveals no abnormalities. There is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Chronic Apical Periodontitis",
+            "Previously Treated with Normal Apical Tissues",
+            "Previously Treated with Symptomatic Apical Periodontitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 7,
+        "question": "An 18-year-old male patient presents to the clinic with no chief complaint of pain, and no prior history of pain or trauma. Clinical examination reveals a lack of response to cold, heat, and electric pulp testing (EPT). The tooth exhibits negative percussion and palpation responses. Periodontal probing shows normal findings. Radiographic evaluation demonstrates normal periapical and root morphology, with no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Reversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Previously Initiated with Condensing Osteitis",
+            "Pulp Necrosis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 8,
+        "question": "A 36-year-old male patient presents to the clinic with no chief complaint of pain. The patient has no history of pain or trauma, and has not undergone previous endodontic treatment. Clinical examination reveals a lack of response to cold testing, heat testing, and EPT. Percussion test and palpation are both negative, indicating no tenderness or swelling. Periodontal probing is normal, and radiographic evaluation shows no abnormalities. There is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Symptomatic Apical Periodontitis",
+            "Previously Treated with Condensing Osteitis",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 9,
+        "question": "A 40-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked and lasts for a short duration. The patient describes the pain as sharp. There is no history of trauma or previous endodontic treatment. Clinical examination reveals an exaggerated response to cold testing, while heat testing and electric pulp testing are normal. Percussion and palpation tests are negative, and periodontal probing shows normal findings. Radiographic evaluation demonstrates normal results, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Initiated with Symptomatic Apical Periodontitis",
+            "Reversible Pulpitis with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Normal Pulp with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 10,
+        "question": "A 71-year-old male patient presents to the clinic with no chief complaint of pain, and there is no history of pain or trauma. The tooth does not respond to cold, heat, or electric pulp testing. Clinical examination reveals a negative percussion test and normal palpation. Periodontal probing shows no signs of disease. Radiographic evaluation indicates normal findings, and there is no swelling or sinus tract. What is the final diagnosis?",
+        "options": [
+            "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Previously Initiated with Chronic Apical Abscess"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 11,
+        "question": "A 73-year-old female patient presents to the clinic with a chief complaint of no pain, although she has a history of spontaneous, sharp, and short-lasting episodes of pain in the past. Clinical examination reveals normal responses to cold and heat testing, as well as electrical pulp testing. The percussion test is negative, and palpation yields normal results. Periodontal probing shows no signs of periodontal disease, and radiographic evaluation reveals no abnormalities. There is no swelling or sinus tract evident. What is the final diagnosis?",
+        "options": [
+            "Previously Initiated with Chronic Apical Abscess",
+            "Normal Pulp with Normal Apical Tissues",
+            "Previously Initiated with Symptomatic Apical Periodontitis",
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 12,
+        "question": "A 72-year-old male patient presents with a chief complaint of pain, with a history of spontaneous and lingering dull pain. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, with normal responses to heat and electrical pulp tests. Percussion and palpation tests are negative, as is periodontal probing. Radiographic evaluation shows normal findings, and there is no swelling or sinus tracts present. What is the final diagnosis?",
+        "options": [
+            "Pulp Necrosis with Asymptomatic Apical Periodontitis",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Initiated with Condensing Osteitis",
+            "Previously Initiated with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 13,
+        "question": "A 45-year-old female patient presents to the clinic with a chief complaint of pain, which is provoked by dental stimuli. The pain is characterized as throbbing and has a short duration. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, but normal responses to heat and electric pulp tests. Percussion test is negative, while palpation test is positive. Periodontal probing shows normal depths, and radiographic findings are unremarkable. Swelling and sinus tracts are absent. What is the final diagnosis?",
+        "options": [
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Initiated with Chronic Apical Abscess",
+            "Previously Treated with Chronic Apical Periodontitis",
+            "Previously Treated with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 14,
+        "question": "A 60-year-old female patient presents to the clinic with a chief complaint of pain, which was provoked and has been present for a short duration with a sharp character. There is no history of trauma or previous endodontic treatment. Clinical examination reveals normal responses to cold and heat testing, as well as electrical pulp testing (EPT). The tooth does not respond to percussion or palpation tests. Periodontal probing shows normal findings, and radiographic evaluation demonstrates normal bone levels. Additionally, there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis",
+            "Normal Pulp with Normal Apical Tissues",
+            "Reversible Pulpitis with Normal Apical Tissues",
+            "Previously Initiated with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'Normal' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 15,
+        "question": "A 21-year-old female patient presents to the clinic with a chief complaint of no pain. The patient reports no previous history of pain or trauma, and has not received any prior endodontic treatment. Clinical examination reveals no response to cold testing, heat testing, or EPT. Percussion and palpation tests are negative, and periodontal probing is normal. Radiographic evaluation shows no abnormalities, and there is no swelling or sinus tracts present. What is the final diagnosis?",
+        "options": [
+            "Pulp Necrosis with Chronic Apical Abscess",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Normal Pulp with Symptomatic Apical Periodontitis",
+            "Pulp Necrosis with Asymptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 16,
+        "question": "A 23-year-old male patient presents to the clinic with a chief complaint of pain. The patient reports no prior history of pain, but the pain has been lingering in duration and throbbing in character. Clinical examination reveals a lingering response to cold testing, while heat and EPT responses are normal. Percussion and palpation tests are negative, and periodontal probing shows normal findings. Radiographic evaluation shows no abnormalities, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Initiated with Symptomatic Apical Periodontitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Pulp Necrosis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 17,
+        "question": "A 36-year-old female patient presents to the clinic with a chief complaint of pain. The patient reports that the pain is provoked and has a short duration, described as sharp in character. There is no history of trauma, and she has not had any previous endodontic treatment. Clinical examination reveals an exaggerated response to cold testing, but normal responses to heat and electrical pulp tests (EPT). Percussion and palpation tests are negative, and periodontal probing shows normal findings. Radiographic evaluation reveals no abnormalities, and there is no swelling or sinus tract present. What is the final diagnosis?",
+        "options": [
+            "Normal Pulp with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Pulp Necrosis with Symptomatic Apical Periodontitis",
+            "Reversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 18,
+        "question": "A 46-year-old female patient presents to the clinic with no chief complaint of pain, and no history of pain or trauma. Clinical examination reveals a lack of response to cold testing, heat testing, EPT testing, and percussion testing, all of which are negative. Palpation test is also negative, and periodontal probing shows normal results. Radiographic evaluation shows normal findings, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Reversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Previously Treated with Asymptomatic Apical Periodontitis",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 19,
+        "question": "A 40-year-old female patient presents to the clinic with a chief complaint of no pain. The patient has no history of pain, trauma, or previous endodontic treatment. Clinical examination reveals a lack of response to cold, heat, and EPT testing. Percussion and palpation tests are negative, indicating no tenderness or swelling in the affected area. Periodontal probing shows normal depths, and radiographic findings are unremarkable. Swelling or sinus tracts are absent. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Chronic Apical Abscess",
+            "Normal Pulp with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis",
+            "Pulp Necrosis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 20,
+        "question": "A 54-year-old female patient presents to the clinic with a chief complaint of pain. The pain is spontaneous, has been present for a short duration, and is described as dull in character. There is no history of trauma or previous endodontic treatment. Clinical examination reveals lingering responses to both cold and heat testing, normal electric pulp testing, and positive percussion and palpation tests. Periodontal probing shows normal findings. Radiographic evaluation reveals no abnormalities, and there is no swelling or sinus tract present. What is the final diagnosis?",
+        "options": [
+            "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Previously Treated with Chronic Apical Periodontitis",
+            "Reversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 21,
+        "question": "A 32-year-old male patient presents to the clinic with a chief complaint of no pain. The patient's history reveals no previous episodes of pain, trauma, or endodontic treatment. Clinical examination yields negative responses to cold, heat, and EPT testing. The tooth is not tender to percussion, and palpation is also negative. Periodontal probing reveals normal findings, and radiographic evaluation shows no abnormalities. Additionally, there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Pulp Necrosis with Symptomatic Apical Periodontitis",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Previously Treated with Chronic Apical Periodontitis",
+            "Reversible Pulpitis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 22,
+        "question": "A 53-year-old female patient presents to the clinic with a chief complaint of spontaneous, sharp pain that has been present for a short duration. There is no history of trauma or previous endodontic treatment. Clinical examination reveals an exaggerated response to cold testing and a normal response to heat and EPT tests. The percussion and palpation tests are negative, and periodontal probing shows normal findings. Radiographic evaluation reveals normal periapical structures, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Normal Pulp with Normal Apical Tissues",
+            "Pulp Necrosis with Asymptomatic Apical Periodontitis",
+            "Reversible Pulpitis with Normal Apical Tissues",
+            "Previously Initiated with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 23,
+        "question": "A 39-year-old male patient presents to the clinic with a chief complaint of pain. The patient's pain history reveals that it was provoked and lasted for a short duration, characterized as throbbing. There is no history of trauma or previous endodontic treatment. Clinical examination shows a lingering response to cold testing, while heat and electrical pulp tests are normal. Percussion and palpation tests are negative, and periodontal probing reveals normal findings. Radiographic evaluation shows normal results, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Normal Pulp with Symptomatic Apical Periodontitis",
+            "Pulp Necrosis with Asymptomatic Apical Periodontitis",
+            "Previously Initiated with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 24,
+        "question": "A 65-year-old male patient presents to the clinic with no chief complaint of pain, but does report a history of sharp, brief pain. He denies any previous trauma or endodontic treatment. Clinical examination reveals normal responses to cold and heat testing, as well as electrical pulp testing. Percussion and palpation tests are negative, and periodontal probing is within normal limits. Radiographic evaluation shows no abnormalities, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Normal Pulp with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis",
+            "Previously Initiated with Condensing Osteitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 25,
+        "question": "A 24-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked and has a short duration. The pain character is sharp, but there is no history of trauma or previous endodontic treatment. Clinical examination reveals normal responses to cold and heat testing, as well as electric pulp testing (EPT). Percussion test and palpation test are both negative, and periodontal probing shows normal findings. Radiographic evaluation shows normal periapical tissues, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Reversible Pulpitis with Normal Apical Tissues",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Previously Initiated with Condensing Osteitis",
+            "Normal Pulp with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Normal' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 26,
+        "question": "A 70-year-old male patient presents to the clinic with a chief complaint of provoked pain, which has been present for a short duration and has a sharp character. There is no history of trauma or previous endodontic treatment. Clinical examination reveals normal responses to cold and heat testing, as well as electric pulp testing. The tooth does not exhibit tenderness to percussion or palpation. Periodontal probing shows normal findings, and radiographic evaluation demonstrates no abnormalities. Additionally, there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Reversible Pulpitis with Normal Apical Tissues",
+            "Pulp Necrosis with Chronic Apical Abscess",
+            "Previously Treated with Chronic Apical Periodontitis",
+            "Previously Initiated with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Normal' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 27,
+        "question": "A 67-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked and has a short duration. The pain character is sharp, and there is no history of trauma. Previous endodontic treatment is absent. Clinical examination reveals an exaggerated response to cold testing, normal response to heat testing, and normal response to electric pulp testing. The percussion test and palpation test are negative. Periodontal probing shows normal findings, and radiographic evaluation reveals no abnormalities. Swelling or sinus tracts are absent. What is the final diagnosis?",
+        "options": [
+            "Normal Pulp with Symptomatic Apical Periodontitis",
+            "Pulp Necrosis with Chronic Apical Abscess",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Reversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 28,
+        "question": "A 25-year-old male patient presents to the clinic with a chief complaint of pain on biting. He reports spontaneous and lingering pain, characterized as dull. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to both cold and heat tests, as well as normal EPT response. The tooth is tender to percussion and palpation testing. Periodontal probing reveals normal findings, and radiographic evaluation shows a periapical radiolucency. There is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Normal Apical Tissues",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Radiolucency' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 29,
+        "question": "A 44-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked and has a lingering duration with a dull character. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, but normal responses to heat and electrical pulp tests. Percussion test is negative, as is palpation test. Periodontal probing shows normal findings. Radiographic evaluation reveals no abnormalities, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Treated with Chronic Apical Abscess",
+            "Pulp Necrosis with Chronic Apical Abscess",
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 30,
+        "question": "A 33-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked in nature and has a short duration. The pain is described as sharp. The patient denies any history of trauma and has not undergone previous endodontic treatment. Clinical examination reveals normal responses to cold, heat, and EPT tests. Percussion and palpation tests are negative, with normal periodontal probing depths. Radiographic evaluation shows no abnormalities, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Reversible Pulpitis with Normal Apical Tissues",
+            "Normal Pulp with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'Normal' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 31,
+        "question": "A 52-year-old female patient presents to the clinic with a chief complaint of pain on biting, which is provoked and lingering in duration. The pain character is dull. She has no history of trauma to the tooth. There is no previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, as well as a lingering response to heat testing. Electric pulp testing (EPT) responses are normal. Percussion test is positive, and palpation test is also positive. Periodontal probing shows normal findings. Radiographic evaluation reveals a periapical radiolucency, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis",
+            "Reversible Pulpitis with Normal Apical Tissues",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Radiolucency' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 32,
+        "question": "A 55-year-old male patient presents to the clinic with a chief complaint of pain, which was provoked and persisted for a short duration with a throbbing character. The patient has no history of trauma or previous endodontic treatment. Clinical examination reveals a normal response to cold testing, heat testing, and electric pulp testing (EPT). The tooth does not respond to percussion testing, and palpation is also negative. Periodontal probing shows normal values, and radiographic evaluation reveals no abnormalities. There is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Initiated with Normal Apical Tissues",
+            "Pulp Necrosis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'No Response' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 33,
+        "question": "A 69-year-old female patient presents to the clinic with a chief complaint of no pain, with a history of no pain and a short duration of sharp pain when it occurs. There is no history of trauma or previous endodontic treatment. Clinical examination reveals normal responses to cold and heat testing, as well as electric pulp testing (EPT). The tooth is not tender to percussion, and palpation is negative. Periodontal probing is within normal limits. Radiographic evaluation shows no abnormalities, and there is no swelling or sinus tract present. What is the final diagnosis?",
+        "options": [
+            "Normal Pulp with Normal Apical Tissues",
+            "Previously Treated with Condensing Osteitis",
+            "Previously Initiated with Symptomatic Apical Periodontitis",
+            "Previously Treated with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 34,
+        "question": "A 42-year-old female patient presents to the clinic with a chief complaint of pain. The patient reports a spontaneous, sharp, and short-duration pain. There is no history of trauma or previous endodontic treatment. Clinical examination reveals an exaggerated response to cold testing, but normal responses to heat and electrical pulp tests. Percussion and palpation tests are negative, as well as periodontal probing. Radiographic findings show no abnormalities, and there is no swelling or sinus tract present. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Asymptomatic Apical Periodontitis",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Reversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 35,
+        "question": "A 64-year-old female patient presents to the clinic with no reported pain or history of trauma. There is no previous endodontic treatment, and clinical examination reveals a lack of response to cold, heat, and electric pulp testing. The tooth does not exhibit percussion tenderness or palpable changes. Periodontal probing reveals normal findings. Radiographic evaluation shows normal structures, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Pulp Necrosis with Asymptomatic Apical Periodontitis",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Reversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 36,
+        "question": "A 49-year-old female patient presents to the clinic with a chief complaint of no pain, with no prior history of pain or trauma. Clinical examination reveals no response to cold testing, heat testing, or electrical pulp testing (EPT). The tooth does not respond to percussion and palpation tests are also negative. Periodontal probing findings are normal. Radiographic evaluation shows no abnormalities, and there is no swelling or sinus tract present. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Pulp Necrosis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 37,
+        "question": "A 66-year-old female patient presents to the clinic with a chief complaint of pain, which is provoked and has a short duration. The pain character is throbbing. There is no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, but heat and electric pulp testing responses are normal. Percussion testing is negative, while palpation testing is positive. Periodontal probing shows normal findings. Radiographic evaluation reveals normal images, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Chronic Apical Periodontitis",
+            "Previously Initiated with Normal Apical Tissues",
+            "Pulp Necrosis with Symptomatic Apical Periodontitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 38,
+        "question": "A 42-year-old female patient presents to the clinic with a chief complaint of spontaneous, sharp pain that has been present for a short duration. The patient denies any history of trauma and has not undergone previous endodontic treatment. Clinical examination reveals normal responses to cold, heat, and EPT testing. Percussion test is negative, as is palpation test. Periodontal probing shows normal findings, and radiographic evaluation does not reveal any abnormalities. There is no swelling or sinus tracts present. What is the final diagnosis?",
+        "options": [
+            "Pulp Necrosis with Asymptomatic Apical Periodontitis",
+            "Normal Pulp with Normal Apical Tissues",
+            "Previously Treated with Chronic Apical Periodontitis",
+            "Pulp Necrosis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 39,
+        "question": "A 47-year-old female patient presents to the clinic with a chief complaint of spontaneous pain, which has been lingering in nature and described as throbbing. Clinical examination reveals a lingering response to cold testing and a similar response to heat testing. Electric pulp testing responses are normal. The tooth is tender to percussion and palpation tests, but periodontal probing shows no abnormal findings. Radiographic evaluation reveals a periapical radiolucency, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Initiated with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Radiolucency' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 40,
+        "question": "A 17-year-old female patient presents to the clinic with a chief complaint of pain, which was provoked and lasted for a short duration, characterized as throbbing. There is no history of trauma or previous endodontic treatment. Clinical examination reveals no response to cold testing, normal responses to heat and electric pulp tests, and positive percussion test with negative palpation. Periodontal probing shows normal findings, and radiographic evaluation does not reveal any abnormalities. Additionally, there is no swelling or sinus tract present. What is the final diagnosis?",
+        "options": [
+            "Pulp Necrosis with Chronic Apical Abscess",
+            "Previously Treated with Chronic Apical Abscess",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Reversible Pulpitis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'No Response' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 41,
+        "question": "A 25-year-old female patient presents to the clinic with a chief complaint of pain, which has been lingering in character and duration. There is no prior history of pain or trauma. The tooth responds lingeringly to cold testing, but normally to heat and electrical pulp testing. Percussion and palpation tests are negative. Periodontal probing reveals normal findings. Radiographic evaluation shows no abnormalities. Swelling or sinus tracts are absent. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Reversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Previously Initiated with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 42,
+        "question": "A 23-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked and has a short duration characterized as throbbing. The patient has no history of trauma or previous endodontic treatment. Clinical examination reveals a lingering response to cold testing, while heat and electric pulp testing responses are normal. Percussion testing elicits a positive response, and palpation testing also demonstrates tenderness. Periodontal probing is normal, and radiographic findings do not indicate any abnormality. Swelling or sinus tracts are absent. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Treated with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 43,
+        "question": "A 38-year-old male patient presents with a chief complaint of pain, which was provoked and has persisted for some time. The patient's pain is described as dull in nature. No history of trauma or previous endodontic treatment exists. Clinical examination reveals lingering responses to both cold and heat testing, as well as normal responses to electronic pulp testing (EPT). Percussion testing elicits a positive response, while palpation testing also yields a positive result. Periodontal probing finds no signs of inflammation. Radiographic evaluation shows normal findings, and there is no swelling or sinus tracts present. What is the final diagnosis?",
+        "options": [
+            "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis",
+            "Previously Treated with Condensing Osteitis",
+            "Pulp Necrosis with Symptomatic Apical Periodontitis",
+            "Pulp Necrosis with Chronic Apical Abscess"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 44,
+        "question": "A 66-year-old male patient presents to the clinic with a chief complaint of pain, without any prior history of pain or trauma. The pain has been short in duration and is described as dull. Clinical examination reveals a lingering response to cold testing, but normal responses to heat and electrical pulp tests. Percussion and palpation tests are negative, and periodontal probing shows no signs of inflammation. Radiographic evaluation reveals no abnormalities, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Initiated with Chronic Apical Abscess",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Previously Treated with Symptomatic Apical Periodontitis",
+            "Reversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 45,
+        "question": "A 71-year-old male patient presents to the clinic with a chief complaint of pain, with no prior history of pain or trauma. The pain is sharp and of short duration. Clinical examination reveals normal responses to cold, heat, and electric pulp testing, as well as negative percussion and palpation tests. Periodontal probing shows normal findings, and radiographic evaluation demonstrates no abnormalities. Additionally, there is no swelling or sinus tract present. What is the final diagnosis?",
+        "options": [
+            "Normal Pulp with Normal Apical Tissues",
+            "Previously Treated with Condensing Osteitis",
+            "Pulp Necrosis with Chronic Apical Periodontitis",
+            "Previously Treated with Symptomatic Apical Periodontitis"
+        ],
+        "correctAnswerIndex": 0,
+        "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 46,
+        "question": "A 36-year-old female patient presents to the clinic with a chief complaint of no pain, with no prior history of pain. The patient describes the duration and character of any past pain episodes as short and sharp, respectively. There is no reported trauma or previous endodontic treatment. Clinical examination reveals normal responses to cold, heat, and electrical pulp testing. Percussion and palpation tests are negative, as are periodontal probing findings. Radiographic evaluation shows normal findings, and there is no swelling or sinus tract present. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Normal Apical Tissues",
+            "Normal Pulp with Symptomatic Apical Periodontitis",
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis",
+            "Normal Pulp with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 47,
+        "question": "A 41-year-old male patient presents to the clinic with a chief complaint of no pain, but has experienced short-lived sharp pains in the past without any notable trauma or previous endodontic treatment. Clinical examination reveals normal responses to cold and heat testing, as well as electric pulp testing (EPT). The tooth is not tender to percussion, and palpation is negative. Periodontal probing shows normal findings, and radiographic evaluation does not reveal any abnormalities. There is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Initiated with Normal Apical Tissues",
+            "Previously Initiated with Chronic Apical Abscess",
+            "Normal Pulp with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 48,
+        "question": "A 42-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked and has a short duration. The pain character is throbbing. The patient has no history of trauma or previous endodontic treatment. Clinical examination reveals normal responses to cold and heat testing, as well as electrothermal pulp testing. Percussion test results are negative, while palpation test results are positive. Periodontal probing is normal, and radiographic findings show no abnormalities. There is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Initiated with Chronic Apical Abscess",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Pulp Necrosis with Symptomatic Apical Periodontitis",
+            "Normal Pulp with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 1,
+        "feedback": "A cold test of 'No Response' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 49,
+        "question": "A 50-year-old male patient presents to the clinic with a chief complaint of pain, which is provoked in response to stimuli. The pain has a short duration and throbbing character. There is no history of trauma or previous endodontic treatment. Clinical examination reveals normal responses to cold and heat testing, as well as electric pulp testing. Percussion testing is positive, and palpation testing also demonstrates tenderness. Periodontal probing shows normal results, and radiographic findings are unremarkable. Finally, there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Previously Treated with Chronic Apical Periodontitis",
+            "Previously Treated with Condensing Osteitis",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues"
+        ],
+        "correctAnswerIndex": 3,
+        "feedback": "A cold test of 'No Response' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    },
+    {
+        "id": 50,
+        "question": "A 69-year-old male patient presents to the clinic with a chief complaint of no pain. The patient reports no prior history of pain or trauma, and has not received previous endodontic treatment. Clinical examination reveals no response to cold testing, heat testing, or electrical pulp testing (EPT). Percussion and palpation tests are negative, and periodontal probing shows normal findings. Radiographic evaluation demonstrates normal periapical structures, and there is no evidence of swelling or sinus tracts. What is the final diagnosis?",
+        "options": [
+            "Pulp Necrosis with Chronic Apical Abscess",
+            "Symptomatic Irreversible Pulpitis with Normal Apical Tissues",
+            "Pulp Necrosis with Normal Apical Tissues",
+            "Symptomatic Irreversible Pulpitis with Condensing Osteitis"
+        ],
+        "correctAnswerIndex": 2,
+        "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
+        "image": "images/placeholder_nopain.jpg"
+    }
+]
