@@ -36,6 +36,7 @@ def get_random_case():
     return random.choice(cases_db)
 
 # Mount static files for images specifically
+os.makedirs("images", exist_ok=True)
 app.mount("/images", StaticFiles(directory="images"), name="images")
 
 # Serve root index.html
