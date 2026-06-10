@@ -45,6 +45,8 @@ def api_rephrase(request: RephraseRequest):
     return {"rephrased": request.question} # Fallback if API fails
 
 # Serve static files for the frontend
+import os
+os.makedirs("images", exist_ok=True)
 app.mount("/images", StaticFiles(directory="images"), name="images")
 
 @app.get("/")
