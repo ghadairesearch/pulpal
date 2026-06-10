@@ -84,16 +84,11 @@ h1, h2, h3 {
     align-items: center;
 }
 
-.logo-text span:first-child {
-    font-size: 1.5rem;
+.logo-text .main-title {
+    font-size: 2.2rem;
     font-weight: 700;
-    line-height: 1.1;
-}
-
-.logo-text .subtitle {
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--text-muted);
+    line-height: 1.2;
+    color: var(--primary);
 }
 
 .progress-indicator {
