@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         totalQuestionsAnswered = 0;
         updateStatsUI();
         startTimer();
+        document.querySelector('.exam-dashboard').classList.remove('hidden');
         quizCardEl.classList.remove('hidden');
         completionScreenEl.classList.add('hidden');
         loadNextQuestion();
@@ -189,7 +190,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Next Question event
     nextBtnEl.addEventListener('click', () => {
-        loadNextQuestion();
+        // If we reached the end of the database, show completion screen
+        if (currentQuestionData && currentQuestionIndex >= currentQuestionData.total_cases_in_db) {
+            document.querySelector('.exam-dashboard').classList.add('hidden');
+            quizCardEl.classList.add('hidden');
+            completionScreenEl.classList.remove('hidden');
+            document.getElementById('final-score').textContent = score;
+            document.getElementById('total-questions').textContent = `/ ${currentQuestionData.total_cases_in_db}`;
+            clearInterval(timerInterval);
+        } else {
+            loadNextQuestion();
+        }
+    });
+
+    // Restart event
+    restartBtnEl.addEventListener('click', () => {
+        initQuiz();
     });
 
     // Start
