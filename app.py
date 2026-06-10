@@ -33,7 +33,10 @@ def get_random_case():
                 "image": "images/placeholder_nopain.jpg"
             }
             
-    return random.choice(cases_db)
+    case = random.choice(cases_db)
+    case_with_meta = dict(case)
+    case_with_meta["total_cases_in_db"] = len(cases_db)
+    return case_with_meta
 
 # Mount static files for images specifically
 os.makedirs("images", exist_ok=True)

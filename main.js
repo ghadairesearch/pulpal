@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // DOM Elements for Stats
     const statCorrectEl = document.getElementById('stat-correct');
     const statIncorrectEl = document.getElementById('stat-incorrect');
-    const statTimeEl = document.getElementById('stat-time');
+    const statTimeEl = document.getElementById('exam-timer');
+    const progressLabelEl = document.getElementById('progress-text-label');
+    const progressPercentEl = document.getElementById('progress-percentage');
+    const progressBarFillEl = document.getElementById('progress-bar-fill');
 
     // State
     let currentQuestionIndex = 0;
@@ -29,20 +32,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // Stats State
     let correctCount = 0;
     let incorrectCount = 0;
-    let questionStartTime = 0;
-    let totalTimeElapsed = 0; // in seconds
     let totalQuestionsAnswered = 0;
+    let examStartTime = null;
+    let timerInterval = null;
+
+    // Timer Logic
+    function startTimer() {
+        if (timerInterval) clearInterval(timerInterval);
+        examStartTime = Date.now();
+        timerInterval = setInterval(() => {
+            const elapsedSecs = Math.floor((Date.now() - examStartTime) / 1000);
+            const m = String(Math.floor(elapsedSecs / 60)).padStart(2, '0');
+            const s = String(elapsedSecs % 60).padStart(2, '0');
+            statTimeEl.textContent = `${m}:${s}`;
+        }, 1000);
+    }
 
     // Update Stats UI
     function updateStatsUI() {
         statCorrectEl.textContent = correctCount;
         statIncorrectEl.textContent = incorrectCount;
-        if (totalQuestionsAnswered > 0) {
-            const avgTime = Math.round(totalTimeElapsed / totalQuestionsAnswered);
-            statTimeEl.textContent = avgTime + 's';
-        } else {
-            statTimeEl.textContent = '0s';
-        }
+    }
+
+    // Update Progress UI
+    function updateProgressUI(totalCases) {
+        const total = totalCases || 50;
+        const percent = Math.round(((currentQuestionIndex) / total) * 100);
+        const clampedPercent = Math.min(100, Math.max(0, percent));
+        progressLabelEl.textContent = `Question ${currentQuestionIndex} of ${total}`;
+        progressPercentEl.textContent = `${clampedPercent}%`;
+        progressBarFillEl.style.width = `${clampedPercent}%`;
     }
 
     // Fetch from Backend API
@@ -71,9 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
         score = 0;
         correctCount = 0;
         incorrectCount = 0;
-        totalTimeElapsed = 0;
         totalQuestionsAnswered = 0;
         updateStatsUI();
+        startTimer();
         quizCardEl.classList.remove('hidden');
         completionScreenEl.classList.add('hidden');
         loadNextQuestion();
@@ -83,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadNextQuestion() {
         hasAnswered = false;
         currentQuestionIndex++;
-        questionStartTime = Date.now();
         
         // Reset UI
         feedbackPanelEl.classList.add('hidden');
@@ -99,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Generate Data
         currentQuestionData = await generateQuestionData();
+        updateProgressUI(currentQuestionData.total_cases_in_db);
         
         // Update Content
         questionTextEl.textContent = currentQuestionData.question;
@@ -149,8 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
         nextBtnEl.classList.remove('hidden');
 
         // Update Stats
-        const timeTaken = (Date.now() - questionStartTime) / 1000;
-        totalTimeElapsed += timeTaken;
         totalQuestionsAnswered++;
 
         if (isCorrect) {

@@ -21,21 +21,24 @@
             </div>
         </header>
 
-        <main class="quiz-container">
-            <div class="stats-container" id="stats-container">
-                <div class="stat-box">
-                    <span class="stat-label">Correct</span>
-                    <span class="stat-value text-success" id="stat-correct">0</span>
+        <div class="exam-dashboard glass-panel">
+            <div class="exam-progress">
+                <div class="progress-text">
+                    <span id="progress-text-label">Question 1 of ...</span>
+                    <span id="progress-percentage">0%</span>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-label">Incorrect</span>
-                    <span class="stat-value text-error" id="stat-incorrect">0</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-label">Avg Time</span>
-                    <span class="stat-value text-primary" id="stat-time">0s</span>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-bar-fill"></div>
                 </div>
             </div>
+            <div class="exam-stats">
+                <div class="stat-badge correct-badge">Correct: <span id="stat-correct">0</span></div>
+                <div class="stat-badge incorrect-badge">Incorrect: <span id="stat-incorrect">0</span></div>
+                <div class="stat-badge timer-badge">Time: <span id="exam-timer">00:00</span></div>
+            </div>
+        </div>
+
+        <main class="quiz-container">
 
             <div class="quiz-card glass-panel" id="quiz-card">
                 <div class="content-section">
