@@ -21,100 +21,37 @@ document.addEventListener('DOMContentLoaded', () => {
     let hasAnswered = false;
     let currentQuestionData = null;
 
-    // Helper functions to get random elements
-    function getRandomInt(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-    
-    function getRandomElement(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
+    let casesDb = [];
+
+    // Fetch Pre-Generated Database
+    async function fetchDatabase() {
+        try {
+            const response = await fetch('cases.json');
+            casesDb = await response.json();
+            // Shuffle cases
+            casesDb = casesDb.sort(() => Math.random() - 0.5);
+        } catch (err) {
+            console.error("Failed to load cases database.", err);
+        }
     }
 
     // Generator Logic
     async function generateQuestionData() {
-        let possibleCombos = [...knowledgeBase.commonCombinations, ...knowledgeBase.conditionalCombinations];
-        // Filter to only combinations that have a defined profile
-        let validCombos = possibleCombos.filter(combo => knowledgeBase.clinicalProfiles[combo.final]);
-        
-        // 1. Pick a Correct Answer
-        const correctCombo = getRandomElement(validCombos);
-        
-        // 2. Select Distractors (can be anything)
-        let options = [correctCombo.final];
-        while(options.length < 4) {
-            let randomCombo = getRandomElement(possibleCombos);
-            if (!options.includes(randomCombo.final)) {
-                options.push(randomCombo.final);
-            }
+        if (casesDb.length === 0) {
+            return {
+                question: "Error: Could not load cases.json. Please ensure you ran generate_cases.py locally.",
+                options: ["Error", "Error", "Error", "Error"],
+                correctAnswerIndex: 0,
+                feedback: "Generate cases.json to continue.",
+                image: ""
+            };
         }
-        
-        // Shuffle options and find correct index
-        options = options.sort(() => Math.random() - 0.5);
-        const correctAnswerIndex = options.indexOf(correctCombo.final);
-
-        // 3. Map Clinical Signs from clinicalProfiles
-        const age = getRandomInt(17, 75);
-        const gender = getRandomElement(["male", "female"]);
-        
-        let profile = knowledgeBase.clinicalProfiles[correctCombo.final];
-
-        // 4. Inject into Template
-        let text = knowledgeBase.generationGuidelines.questionTemplate;
-        text = text.replace("{Age}", age).replace("{Gender}", gender);
-        
-        for (let key in profile) {
-            let selectedValue = getRandomElement(profile[key]);
-            
-            if (!selectedValue || selectedValue === "" || selectedValue === "blank") {
-                // Remove the entire "Key: {Key}." from the template if it's empty
-                let regex = new RegExp(`${key}: \\{${key}\\}\\.\\s*`, "gi");
-                text = text.replace(regex, "");
-            } else {
-                text = text.replace(`{${key}}`, selectedValue);
-            }
-        }
-
-        let finalQuestionText = text;
-        
-        // 5. LLM Rephrasing via Python Backend
-        try {
-            const response = await fetch("/api/rephrase", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    question: text
-                })
-            });
-            
-            if (response.ok) {
-                const data = await response.json();
-                if (data.rephrased) {
-                    finalQuestionText = data.rephrased;
-                }
-            } else {
-                console.log("Backend error. Falling back to template.");
-            }
-        } catch (err) {
-            console.log("Could not connect to backend server. Falling back to template.");
-        }
-
-        // 6. Generate Feedback
-        let feedback = `A cold test of '${coldTest}' indicates ${correctCombo.pulp}. `;
-        feedback += `Percussion: '${percussion}' and Radiograph: '${radiograph}' with Swelling: '${swelling}' indicates ${correctCombo.apical}.`;
-
-        return {
-            question: finalQuestionText,
-            options: options,
-            correctAnswerIndex: correctAnswerIndex,
-            feedback: feedback,
-            image: "images/placeholder_nopain.jpg" // We can use a generic placeholder or map it
-        };
+        return casesDb[(currentQuestionIndex - 1) % casesDb.length];
     }
 
     // Initialize Quiz
-    function initQuiz() {
+    async function initQuiz() {
+        await fetchDatabase();
         currentQuestionIndex = 0;
         score = 0;
         quizCardEl.classList.remove('hidden');
