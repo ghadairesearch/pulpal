@@ -1,94 +1,58 @@
+import os
+import requests
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
 
 app = FastAPI()
 
-# Model Initialization
-model_name = "Qwen/Qwen2.5-1.5B-Instruct"
-
-tokenizer = None
-model = None
-
-@app.on_event("startup")
-def load_model():
-    global tokenizer, model
-    try:
-        print(f"Loading {model_name}...")
-        tokenizer = AutoTokenizer.from_pretrained(model_name)
-        model = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            torch_dtype=torch.float16,
-            device_map="auto"
-        )
-        print("Model loaded successfully!")
-    except Exception as e:
-        print(f"Error loading model (it may require HF_TOKEN): {e}")
+# Use the token from environment variables (Set this in Render)
+HF_TOKEN = os.environ.get("HF_TOKEN")
+API_URL = "https://api-inference.huggingface.co/models/Qwen/Qwen2.5-1.5B-Instruct"
 
 class RephraseRequest(BaseModel):
     question: str
 
 @app.post("/api/rephrase")
-async def api_rephrase(request: RephraseRequest):
-    if not model or not tokenizer:
-        print("Model not loaded. Returning original question.")
-        return {"rephrased": request.question}
-
-    messages = [
-        {
-            "role": "system",
-            "content": "You are a dental education expert."
-        },
-        {
-            "role": "user",
-            "content": f"""
-Rephrase the following question while preserving all clinical findings,
-diagnosis, meaning, and difficulty level.
-
-Return only the rephrased question.
-
-Question:
-{request.question}
-"""
+def api_rephrase(request: RephraseRequest):
+    headers = {"Authorization": f"Bearer {HF_TOKEN}"}
+    
+    # Format the prompt exactly how Qwen expects it
+    prompt = f"<|im_start|>system\nYou are a dental education expert.<|im_end|>\n<|im_start|>user\nRephrase the following question while preserving all clinical findings, diagnosis, meaning, and difficulty level.\n\nReturn only the rephrased question.\n\nQuestion:\n{request.question}<|im_end|>\n<|im_start|>assistant\n"
+    
+    payload = {
+        "inputs": prompt,
+        "parameters": {
+            "max_new_tokens": 300,
+            "temperature": 0.7,
+            "return_full_text": False
         }
-    ]
-
+    }
+    
     try:
-        prompt = tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True
-        )
-
-        inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
-
-        outputs = model.generate(
-            **inputs,
-            max_new_tokens=300,
-            temperature=0.7,
-            do_sample=True
-        )
-
-        result = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        rephrased = result.split("assistant")[-1].strip()
-        return {"rephrased": rephrased}
+        # Send the request to Hugging Face instead of processing locally
+        response = requests.post(API_URL, headers=headers, json=payload, timeout=30)
+        if response.status_code == 200:
+            result = response.json()
+            if isinstance(result, list) and len(result) > 0 and "generated_text" in result[0]:
+                rephrased = result[0]["generated_text"].strip()
+                return {"rephrased": rephrased}
+        print(f"HF API Error: {response.text}")
     except Exception as e:
-        print(f"Generation error: {e}")
-        return {"rephrased": request.question}
+        print(f"Request error: {e}")
+        
+    return {"rephrased": request.question} # Fallback if API fails
 
 # Serve static files for the frontend
 app.mount("/images", StaticFiles(directory="images"), name="images")
 
 @app.get("/")
-async def root():
+def root():
     return FileResponse("index.html")
 
 @app.get("/{filename}")
-async def get_file(filename: str):
-    import os
+def get_file(filename: str):
     if os.path.exists(filename):
         return FileResponse(filename)
     return FileResponse("index.html")
