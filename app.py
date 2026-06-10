@@ -8,7 +8,7 @@ import torch
 app = FastAPI()
 
 # Model Initialization
-model_name = "meta-llama/Llama-3.1-8B-Instruct"
+model_name = "Qwen/Qwen2.5-1.5B-Instruct"
 
 tokenizer = None
 model = None
