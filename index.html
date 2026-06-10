@@ -22,6 +22,21 @@
         </header>
 
         <main class="quiz-container">
+            <div class="stats-container" id="stats-container">
+                <div class="stat-box">
+                    <span class="stat-label">Correct</span>
+                    <span class="stat-value text-success" id="stat-correct">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Incorrect</span>
+                    <span class="stat-value text-error" id="stat-incorrect">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Avg Time</span>
+                    <span class="stat-value text-primary" id="stat-time">0s</span>
+                </div>
+            </div>
+
             <div class="quiz-card glass-panel" id="quiz-card">
                 <div class="content-section">
                     <div class="progress-indicator" style="margin-bottom: 0.5rem; color: var(--accent-blue); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">
