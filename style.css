@@ -53,7 +53,7 @@ h1, h2, h3 {
 
 /* Layout */
 .app-container {
-    max-width: 650px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 2rem;
     width: 100%;
@@ -130,13 +130,6 @@ h1, h2, h3 {
     transition: var(--transition);
 }
 
-@media (min-width: 768px) {
-    .quiz-card {
-        flex-direction: row;
-        align-items: stretch;
-    }
-}
-
 /* Image Section */
 .image-section {
     flex: 1;
@@ -148,15 +141,6 @@ h1, h2, h3 {
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
-}
-
-@media (min-width: 768px) {
-    .image-section {
-        border-bottom: none;
-        border-left: 1px solid var(--border);
-        min-height: 400px;
-        padding: 2rem;
-    }
 }
 
 .image-wrapper {
