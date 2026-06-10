@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
     <div class="app-container">
@@ -45,6 +45,13 @@
                     </div>
                     <h2 class="question-text" id="question-text">Loading question...</h2>
                     
+                    <div class="mobile-image-container">
+                        <div class="image-wrapper">
+                            <img id="question-image-mobile" src="" alt="Clinical Case Image">
+                            <div class="image-loader" id="image-loader-mobile"></div>
+                        </div>
+                    </div>
+
                     <div class="options-container" id="options-container">
                         <!-- Options will be injected here by JS -->
                     </div>
@@ -60,10 +67,10 @@
                     <button class="btn-primary action-btn hidden" id="next-btn" style="margin-top: 1.5rem;">Next Question</button>
                 </div>
 
-                <div class="image-section">
+                <div class="image-section desktop-image-section">
                     <div class="image-wrapper">
-                        <img id="question-image" src="" alt="Clinical Case Image">
-                        <div class="image-loader" id="image-loader"></div>
+                        <img id="question-image-desktop" src="" alt="Clinical Case Image">
+                        <div class="image-loader" id="image-loader-desktop"></div>
                     </div>
                 </div>
             </div>
@@ -82,6 +89,6 @@
         </main>
     </div>
 
-    <script src="main.js?v=7"></script>
+    <script src="main.js?v=8"></script>
 </body>
 </html>

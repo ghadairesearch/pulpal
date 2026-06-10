@@ -2,12 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // DOM Elements
     const questionCounterEl = document.getElementById('question-counter');
     const questionImageEl = document.getElementById('question-image');
-    const imageWrapperEl = document.querySelector('.image-wrapper');
+    const questionImageMobileEl = document.getElementById('question-image-mobile');
+    const questionImageDesktopEl = document.getElementById('question-image-desktop');
     const questionTextEl = document.getElementById('question-text');
     const optionsContainerEl = document.getElementById('options-container');
     const feedbackPanelEl = document.getElementById('feedback-panel');
     const feedbackTitleEl = document.getElementById('feedback-title');
     const feedbackTextEl = document.getElementById('feedback-text');
+    const feedbackIconEl = document.getElementById('feedback-icon');
     const nextBtnEl = document.getElementById('next-btn');
     const quizCardEl = document.getElementById('quiz-card');
     const completionScreenEl = document.getElementById('completion-screen');
@@ -110,11 +112,16 @@ document.addEventListener('DOMContentLoaded', () => {
         nextBtnEl.classList.add('hidden');
         optionsContainerEl.innerHTML = '';
         
-        // Update Counter (Infinite mode)
+        // Update Counter
         questionCounterEl.textContent = `Question ${currentQuestionIndex}`;
         
         // Loading State
         questionTextEl.textContent = "Generating clinical scenario...";
+        
+        questionImageMobileEl.classList.add('loading');
+        questionImageDesktopEl.classList.add('loading');
+        questionImageMobileEl.parentElement.classList.add('loading');
+        questionImageDesktopEl.parentElement.classList.add('loading');
         
         // Generate Data
         currentQuestionData = await generateQuestionData();
@@ -123,18 +130,27 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update Content
         questionTextEl.textContent = currentQuestionData.question;
         
-        // Handle Image Loading
-        imageWrapperEl.classList.add('loading');
-        questionImageEl.classList.add('loading');
-        questionImageEl.onload = () => {
-            imageWrapperEl.classList.remove('loading');
-            questionImageEl.classList.remove('loading');
+        const imageUrl = currentQuestionData.image;
+        questionImageMobileEl.src = imageUrl;
+        questionImageDesktopEl.src = imageUrl;
+        
+        const img = new Image();
+        img.onload = () => {
+            questionImageMobileEl.classList.remove('loading');
+            questionImageDesktopEl.classList.remove('loading');
+            questionImageMobileEl.parentElement.classList.remove('loading');
+            questionImageDesktopEl.parentElement.classList.remove('loading');
         };
-        questionImageEl.onerror = () => {
+        img.onerror = () => {
             const placeholderSvg = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="%23e2e8f0"/><text x="50%" y="50%" font-family="sans-serif" font-size="20" fill="%2364748b" text-anchor="middle" dominant-baseline="middle">Clinical Image</text></svg>`;
-            questionImageEl.src = placeholderSvg;
+            questionImageMobileEl.src = placeholderSvg;
+            questionImageDesktopEl.src = placeholderSvg;
+            questionImageMobileEl.classList.remove('loading');
+            questionImageDesktopEl.classList.remove('loading');
+            questionImageMobileEl.parentElement.classList.remove('loading');
+            questionImageDesktopEl.parentElement.classList.remove('loading');
         };
-        questionImageEl.src = currentQuestionData.image;
+        img.src = imageUrl;
 
         // Render Options
         currentQuestionData.options.forEach((optionText, index) => {

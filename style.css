@@ -207,6 +207,16 @@ h1, h2, h3 {
 }
 
 /* Image Section */
+.mobile-image-container {
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.desktop-image-section {
+    display: none !important;
+}
+
 .image-section {
     flex: 0.8;
     background: #f8fafc;
@@ -225,6 +235,14 @@ h1, h2, h3 {
         border-left: 1px solid var(--border);
         min-height: 300px;
         padding: 1.5rem;
+    }
+    
+    .mobile-image-container {
+        display: none !important;
+    }
+    
+    .desktop-image-section {
+        display: flex !important;
     }
 }
 
