@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // DOM Elements
     const questionCounterEl = document.getElementById('question-counter');
     const questionImageEl = document.getElementById('question-image');
-    const questionImageMobileEl = document.getElementById('question-image-mobile');
-    const questionImageDesktopEl = document.getElementById('question-image-desktop');
+    const imageLoaderEl = document.getElementById('image-loader');
     const questionTextEl = document.getElementById('question-text');
     const optionsContainerEl = document.getElementById('options-container');
     const feedbackPanelEl = document.getElementById('feedback-panel');
@@ -14,9 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizCardEl = document.getElementById('quiz-card');
     const completionScreenEl = document.getElementById('completion-screen');
     const finalScoreEl = document.getElementById('final-score');
-    
-    const questionImageEl = document.getElementById('question-image');
-    const imageLoaderEl = document.getElementById('image-loader');
     const totalQuestionsEl = document.getElementById('total-questions');
     const restartBtnEl = document.getElementById('restart-btn');
 
