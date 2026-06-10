@@ -210,9 +210,14 @@ h1, h2, h3 {
 }
 
 .question-text {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+    color: var(--text-dark);
     margin-bottom: 2rem;
-    color: var(--text-main);
+    line-height: 1.5;
+    font-weight: 600;
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 /* Options */
