@@ -53,7 +53,7 @@ h1, h2, h3 {
 
 /* Layout */
 .app-container {
-    max-width: 800px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 2rem;
     width: 100%;
