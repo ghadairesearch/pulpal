@@ -742,6 +742,61 @@
             "Swelling / Sinus Tract": [
                 "Present"
             ]
+        },
+        "Pulp Necrosis with Chronic Apical Abscess": {
+            "Chief Complaint": [
+                "No pain / esthetic concern",
+                "Pain",
+                "Pain on pressure",
+                "Swelling",
+                "Sinus tract"
+            ],
+            "History of Pain": [
+                "None",
+                "Provoked",
+                "Spontaneous"
+            ],
+            "Pain Duration": [
+                "Short",
+                "Lingering"
+            ],
+            "Pain Character": [
+                "Dull"
+            ],
+            "History of Trauma": [
+                "Yes",
+                "No"
+            ],
+            "Previous Endodontic Treatment": [
+                "No"
+            ],
+            "Cold Test Response": [
+                "No Response",
+                "Normal"
+            ],
+            "Heat Test Response": [
+                "No Response",
+                "Normal"
+            ],
+            "EPT Response": [
+                "No Response",
+                "Normal"
+            ],
+            "Percussion Test": [
+                "Positive"
+            ],
+            "Palpation Test": [
+                "Positive"
+            ],
+            "Periodontal Probing": [
+                "Normal"
+            ],
+            "Radiographic Findings": [
+                "Radiolucency"
+            ],
+            "Swelling / Sinus Tract": [
+                "Present"
+            ]
         }
     },
     "generationGuidelines": {
