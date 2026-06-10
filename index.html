@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=8">
+    <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
     <div class="app-container">
@@ -39,39 +39,36 @@
         <main class="quiz-container">
 
             <div class="quiz-card glass-panel" id="quiz-card">
-                <div class="content-section">
-                    <div class="progress-indicator" style="margin-bottom: 0.5rem; color: var(--accent-blue); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;">
-                        <span id="question-counter">Question 1</span>
+                <!-- Upper Section: Question (Left) and Image (Right) -->
+                <div class="quiz-upper-section">
+                    <div class="question-area">
+                        <div class="progress-indicator" id="question-counter">Question 1</div>
+                        <h2 class="question-text" id="question-text">Loading question...</h2>
                     </div>
-                    <h2 class="question-text" id="question-text">Loading question...</h2>
                     
-                    <div class="mobile-image-container">
+                    <div class="image-area">
                         <div class="image-wrapper">
-                            <img id="question-image-mobile" src="" alt="Clinical Case Image">
-                            <div class="image-loader" id="image-loader-mobile"></div>
+                            <img id="question-image" src="" alt="Clinical Case Image">
+                            <div class="image-loader" id="image-loader"></div>
                         </div>
                     </div>
+                </div>
 
+                <!-- Lower Section: Options and Feedback (Full Width) -->
+                <div class="quiz-lower-section">
                     <div class="options-container" id="options-container">
                         <!-- Options will be injected here by JS -->
                     </div>
 
                     <div class="feedback-panel hidden" id="feedback-panel">
                         <div class="feedback-header">
-                            <div class="feedback-icon" id="feedback-icon"></div>
-                            <h3 class="feedback-title" id="feedback-title">Feedback</h3>
+                            <span class="feedback-icon" id="feedback-icon"></span>
+                            <h3 class="feedback-title" id="feedback-title">Correct!</h3>
                         </div>
                         <p class="feedback-text" id="feedback-text">Explanation goes here.</p>
                     </div>
-                    
-                    <button class="btn-primary action-btn hidden" id="next-btn" style="margin-top: 1.5rem;">Next Question</button>
-                </div>
 
-                <div class="image-section desktop-image-section">
-                    <div class="image-wrapper">
-                        <img id="question-image-desktop" src="" alt="Clinical Case Image">
-                        <div class="image-loader" id="image-loader-desktop"></div>
-                    </div>
+                    <button class="btn-primary action-btn hidden" id="next-btn" style="margin-top: 1.5rem;">Next Question</button>
                 </div>
             </div>
             
@@ -89,6 +86,6 @@
         </main>
     </div>
 
-    <script src="main.js?v=8"></script>
+    <script src="main.js?v=9"></script>
 </body>
 </html>

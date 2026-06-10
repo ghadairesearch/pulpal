@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizCardEl = document.getElementById('quiz-card');
     const completionScreenEl = document.getElementById('completion-screen');
     const finalScoreEl = document.getElementById('final-score');
+    
+    const questionImageEl = document.getElementById('question-image');
+    const imageLoaderEl = document.getElementById('image-loader');
     const totalQuestionsEl = document.getElementById('total-questions');
     const restartBtnEl = document.getElementById('restart-btn');
 
@@ -116,12 +119,10 @@ document.addEventListener('DOMContentLoaded', () => {
         questionCounterEl.textContent = `Question ${currentQuestionIndex}`;
         
         // Loading State
-        questionTextEl.textContent = "Generating clinical scenario...";
+        questionTextEl.textContent = 'Generating clinical scenario...';
         
-        questionImageMobileEl.classList.add('loading');
-        questionImageDesktopEl.classList.add('loading');
-        questionImageMobileEl.parentElement.classList.add('loading');
-        questionImageDesktopEl.parentElement.classList.add('loading');
+        questionImageEl.classList.add('loading');
+        questionImageEl.parentElement.classList.add('loading');
         
         // Generate Data
         currentQuestionData = await generateQuestionData();
@@ -131,24 +132,18 @@ document.addEventListener('DOMContentLoaded', () => {
         questionTextEl.textContent = currentQuestionData.question;
         
         const imageUrl = currentQuestionData.image;
-        questionImageMobileEl.src = imageUrl;
-        questionImageDesktopEl.src = imageUrl;
+        questionImageEl.src = imageUrl;
         
         const img = new Image();
         img.onload = () => {
-            questionImageMobileEl.classList.remove('loading');
-            questionImageDesktopEl.classList.remove('loading');
-            questionImageMobileEl.parentElement.classList.remove('loading');
-            questionImageDesktopEl.parentElement.classList.remove('loading');
+            questionImageEl.classList.remove('loading');
+            questionImageEl.parentElement.classList.remove('loading');
         };
         img.onerror = () => {
             const placeholderSvg = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="%23e2e8f0"/><text x="50%" y="50%" font-family="sans-serif" font-size="20" fill="%2364748b" text-anchor="middle" dominant-baseline="middle">Clinical Image</text></svg>`;
-            questionImageMobileEl.src = placeholderSvg;
-            questionImageDesktopEl.src = placeholderSvg;
-            questionImageMobileEl.classList.remove('loading');
-            questionImageDesktopEl.classList.remove('loading');
-            questionImageMobileEl.parentElement.classList.remove('loading');
-            questionImageDesktopEl.parentElement.classList.remove('loading');
+            questionImageEl.src = placeholderSvg;
+            questionImageEl.classList.remove('loading');
+            questionImageEl.parentElement.classList.remove('loading');
         };
         img.src = imageUrl;
 
