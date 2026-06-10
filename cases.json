@@ -10,7 +10,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/1.png"
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/13.png"
     },
     {
         "id": 3,
@@ -36,7 +36,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/28.JPG"
     },
     {
         "id": 4,
@@ -49,7 +49,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/19.png"
     },
     {
         "id": 5,
@@ -62,7 +62,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/4.png"
     },
     {
         "id": 6,
@@ -75,7 +75,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/16.png"
     },
     {
         "id": 7,
@@ -88,7 +88,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/22.png"
     },
     {
         "id": 8,
@@ -101,7 +101,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/13.png"
     },
     {
         "id": 9,
@@ -114,7 +114,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/14.png"
     },
     {
         "id": 10,
@@ -127,7 +127,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/30.png"
     },
     {
         "id": 11,
@@ -140,7 +140,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/3.png"
     },
     {
         "id": 12,
@@ -153,7 +153,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/13.png"
     },
     {
         "id": 13,
@@ -166,7 +166,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/11.png"
     },
     {
         "id": 14,
@@ -179,7 +179,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'Normal' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/8.png"
     },
     {
         "id": 15,
@@ -192,7 +192,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/2.png"
     },
     {
         "id": 16,
@@ -205,7 +205,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/18.png"
     },
     {
         "id": 17,
@@ -218,7 +218,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/1.png"
     },
     {
         "id": 18,
@@ -231,7 +231,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/24.png"
     },
     {
         "id": 19,
@@ -244,7 +244,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/25.png"
     },
     {
         "id": 20,
@@ -257,7 +257,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/2.png"
     },
     {
         "id": 21,
@@ -270,7 +270,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/22.png"
     },
     {
         "id": 22,
@@ -283,7 +283,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/10.png"
     },
     {
         "id": 23,
@@ -296,7 +296,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/12.png"
     },
     {
         "id": 24,
@@ -309,7 +309,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/30.png"
     },
     {
         "id": 25,
@@ -322,7 +322,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Normal' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/24.png"
     },
     {
         "id": 26,
@@ -335,7 +335,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Normal' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/15.png"
     },
     {
         "id": 27,
@@ -348,7 +348,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/23.png"
     },
     {
         "id": 28,
@@ -361,7 +361,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Radiolucency' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/1.png"
     },
     {
         "id": 29,
@@ -374,7 +374,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/13.png"
     },
     {
         "id": 30,
@@ -387,7 +387,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'Normal' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/11.png"
     },
     {
         "id": 31,
@@ -400,7 +400,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Radiolucency' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/1.png"
     },
     {
         "id": 32,
@@ -413,7 +413,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'No Response' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/1.png"
     },
     {
         "id": 33,
@@ -426,7 +426,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/23.png"
     },
     {
         "id": 34,
@@ -439,7 +439,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Exaggerated' indicates Reversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/26.JPG"
     },
     {
         "id": 35,
@@ -452,7 +452,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/25.png"
     },
     {
         "id": 36,
@@ -465,7 +465,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/3.png"
     },
     {
         "id": 37,
@@ -478,7 +478,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/29.png"
     },
     {
         "id": 38,
@@ -491,7 +491,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/3.png"
     },
     {
         "id": 39,
@@ -504,7 +504,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Radiolucency' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/2.png"
     },
     {
         "id": 40,
@@ -517,7 +517,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'No Response' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/21.png"
     },
     {
         "id": 41,
@@ -530,7 +530,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/5 a Periapical.png"
     },
     {
         "id": 42,
@@ -543,7 +543,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'Lingering' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/5 b Microscope.JPG"
     },
     {
         "id": 43,
@@ -556,7 +556,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Symptomatic Apical Periodontitis.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/1.png"
     },
     {
         "id": 44,
@@ -569,7 +569,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'Lingering' indicates Symptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/30.png"
     },
     {
         "id": 45,
@@ -582,7 +582,7 @@
         ],
         "correctAnswerIndex": 0,
         "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/11.png"
     },
     {
         "id": 46,
@@ -595,7 +595,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/9.png"
     },
     {
         "id": 47,
@@ -608,7 +608,7 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'Normal' indicates Normal Pulp. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/28.JPG"
     },
     {
         "id": 48,
@@ -621,7 +621,7 @@
         ],
         "correctAnswerIndex": 1,
         "feedback": "A cold test of 'No Response' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/4.png"
     },
     {
         "id": 49,
@@ -634,7 +634,7 @@
         ],
         "correctAnswerIndex": 3,
         "feedback": "A cold test of 'No Response' indicates Asymptomatic Irreversible Pulpitis. Percussion: 'Positive' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/24.png"
     },
     {
         "id": 50,
@@ -647,6 +647,6 @@
         ],
         "correctAnswerIndex": 2,
         "feedback": "A cold test of 'No Response' indicates Pulp Necrosis. Percussion: 'Negative' and Radiograph: 'Normal' with Swelling: 'Absent' indicates Normal Apical Tissues.",
-        "image": "images/placeholder_nopain.jpg"
+        "image": "images/19.png"
     }
 ]
