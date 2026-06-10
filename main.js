@@ -21,37 +21,28 @@ document.addEventListener('DOMContentLoaded', () => {
     let hasAnswered = false;
     let currentQuestionData = null;
 
-    let casesDb = [];
-
-    // Fetch Pre-Generated Database
-    async function fetchDatabase() {
-        try {
-            const response = await fetch('cases.json');
-            casesDb = await response.json();
-            // Shuffle cases
-            casesDb = casesDb.sort(() => Math.random() - 0.5);
-        } catch (err) {
-            console.error("Failed to load cases database.", err);
-        }
-    }
-
-    // Generator Logic
+    // Fetch from Backend API
     async function generateQuestionData() {
-        if (casesDb.length === 0) {
+        try {
+            const response = await fetch('/api/case/random');
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return await response.json();
+        } catch (err) {
+            console.error("Failed to load case from backend API.", err);
             return {
-                question: "Error: Could not load cases.json. Please ensure you ran generate_cases.py locally.",
+                question: "Error: Could not load case from server. Please ensure the Python backend is running.",
                 options: ["Error", "Error", "Error", "Error"],
                 correctAnswerIndex: 0,
-                feedback: "Generate cases.json to continue.",
+                feedback: "Ensure cases.json is present and the server is running.",
                 image: ""
             };
         }
-        return casesDb[(currentQuestionIndex - 1) % casesDb.length];
     }
 
     // Initialize Quiz
     async function initQuiz() {
-        await fetchDatabase();
         currentQuestionIndex = 0;
         score = 0;
         quizCardEl.classList.remove('hidden');
