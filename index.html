@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulpal - Dental Clinical Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 4a4 4 0 0 1 4 4c0 2-1 4-2 6l-1 5a2 2 0 0 1-3.8.8L12 15l-1.2 4.8A2 2 0 0 1 7 19l-1-5c-1-2-2-4-2-6a4 4 0 0 1 4-4c2 0 3 1.5 4 3 1-1.5 2-3 4-3Z" />
+                </svg>
+                <div class="logo-text">
+                    <span>Pulpal</span>
+                    <span class="subtitle">Interactive Pulpal & Periapical Diagnosis Tutor</span>
+                </div>
+            </div>
+            <div class="header-controls" style="display: flex; gap: 10px; align-items: center;">
+                <div class="progress-indicator">
+                    <span id="question-counter">Question 1</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="quiz-container">
+            <div class="quiz-card glass-panel" id="quiz-card">
+                <div class="content-section">
+                    <h2 class="question-text" id="question-text">Loading question...</h2>
+                    
+                    <div class="options-container" id="options-container">
+                        <!-- Options will be injected here by JS -->
+                    </div>
+
+                    <div class="feedback-panel hidden" id="feedback-panel">
+                        <div class="feedback-header">
+                            <div class="feedback-icon" id="feedback-icon"></div>
+                            <h3 class="feedback-title" id="feedback-title">Feedback</h3>
+                        </div>
+                        <p class="feedback-text" id="feedback-text">Explanation goes here.</p>
+                    </div>
+                    
+                    <button class="btn-primary action-btn hidden" id="next-btn" style="margin-top: 1.5rem;">Next Question</button>
+                </div>
+
+                <div class="image-section">
+                    <div class="image-wrapper">
+                        <img id="question-image" src="" alt="Clinical Case Image">
+                        <div class="image-loader" id="image-loader"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="completion-screen hidden" id="completion-screen">
+                <div class="completion-card glass-panel">
+                    <h2>Quiz Completed!</h2>
+                    <p>You have finished all available cases.</p>
+                    <div class="score-display">
+                        <span class="score-value" id="final-score">0</span>
+                        <span class="score-total" id="total-questions">/ 0</span>
+                    </div>
+                    <button class="btn-primary action-btn" id="restart-btn">Restart Quiz</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="knowledge.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
