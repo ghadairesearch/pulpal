@@ -841,6 +841,58 @@
             "Swelling / Sinus Tract": [
                 "Absent"
             ]
+        },
+        "Previously Initiated with Symptomatic Apical Periodontitis": {
+            "Chief Complaint": [
+                "pain",
+                "frequent abscess",
+                "no pain"
+            ],
+            "History of Pain": [
+                "Spontaneous",
+                "Provoked",
+                "None"
+            ],
+            "Pain Duration": [
+                "Lingering"
+            ],
+            "Pain Character": [
+                "Sharp",
+                "Dull"
+            ],
+            "History of Trauma": [
+                "No"
+            ],
+            "Previous Endodontic Treatment": [
+                "Previously Initiated"
+            ],
+            "Cold Test Response": [
+                "Lingering",
+                "No Response"
+            ],
+            "Heat Test Response": [
+                "No Response",
+                "blank"
+            ],
+            "EPT Response": [
+                "No Response"
+            ],
+            "Percussion Test": [
+                "Positive"
+            ],
+            "Palpation Test": [
+                "Positive"
+            ],
+            "Periodontal Probing": [
+                "Normal"
+            ],
+            "Radiographic Findings": [
+                "Radiolucency",
+                "Normal"
+            ],
+            "Swelling / Sinus Tract": [
+                "Absent"
+            ]
         }
     },
     "generationGuidelines": {
