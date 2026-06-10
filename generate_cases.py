@@ -24,7 +24,7 @@ OLLAMA_URL = "http://localhost:11434/api/chat"
 cases = []
 NUM_CASES = 50 # You can change this to 500 or whatever you want
 
-print(f"Generating {NUM_CASES} cases using local Ollama (this might take a few minutes)...")
+print(f"Generating {NUM_CASES} cases using local Ollama (this might take a few minutes)...", flush=True)
 
 for i in range(NUM_CASES):
     correct_combo = random.choice(valid_combos)
@@ -78,7 +78,7 @@ for i in range(NUM_CASES):
             data = response.json()
             final_question_text = data.get("message", {}).get("content", text).strip()
     except Exception as e:
-        print(f"Ollama error on case {i+1}: {e} - Falling back to template.")
+        print(f"Ollama error on case {i+1}: {e} - Falling back to template.", flush=True)
         
     cold = selected_values.get("Cold Test Response", "N/A")
     perc = selected_values.get("Percussion Test", "N/A")
@@ -96,9 +96,8 @@ for i in range(NUM_CASES):
         "image": "images/placeholder_nopain.jpg"
     }
     cases.append(case_obj)
-    print(f"Generated case {i+1}/{NUM_CASES}")
+    print(f"Generated case {i+1}/{NUM_CASES}", flush=True)
+    with open('cases.json', 'w', encoding='utf-8') as f:
+        json.dump(cases, f, indent=4)
 
-with open('cases.json', 'w', encoding='utf-8') as f:
-    json.dump(cases, f, indent=4)
-    
-print("Successfully saved all cases to cases.json!")
+print("Successfully saved all cases to cases.json!", flush=True)
