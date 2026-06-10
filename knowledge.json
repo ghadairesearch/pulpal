@@ -797,6 +797,50 @@
             "Swelling / Sinus Tract": [
                 "Present"
             ]
+        },
+        "Previously Initiated with Normal Apical Tissues": {
+            "Chief Complaint": [
+                "No pain"
+            ],
+            "History of Pain": [
+                "blank"
+            ],
+            "Pain Duration": [
+                "blank"
+            ],
+            "Pain Character": [
+                "blank"
+            ],
+            "History of Trauma": [
+                "No"
+            ],
+            "Previous Endodontic Treatment": [
+                "Previously Initiated"
+            ],
+            "Cold Test Response": [
+                "blank"
+            ],
+            "Heat Test Response": [
+                "blank"
+            ],
+            "EPT Response": [
+                "blank"
+            ],
+            "Percussion Test": [
+                "Negative"
+            ],
+            "Palpation Test": [
+                "Negative"
+            ],
+            "Periodontal Probing": [
+                "Normal"
+            ],
+            "Radiographic Findings": [
+                "Normal"
+            ],
+            "Swelling / Sinus Tract": [
+                "Absent"
+            ]
         }
     },
     "generationGuidelines": {
