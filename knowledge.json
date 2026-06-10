@@ -643,6 +643,56 @@
             "Swelling / Sinus Tract": [
                 "Absent"
             ]
+        },
+        "Pulp Necrosis with Asymptomatic Apical Periodontitis": {
+            "Chief Complaint": [
+                "pain",
+                "no pain"
+            ],
+            "History of Pain": [
+                "Provoked",
+                "None"
+            ],
+            "Pain Duration": [
+                "Lingering"
+            ],
+            "Pain Character": [
+                "Dull"
+            ],
+            "History of Trauma": [
+                "Yes",
+                "No"
+            ],
+            "Previous Endodontic Treatment": [
+                "No"
+            ],
+            "Cold Test Response": [
+                "No Response"
+            ],
+            "Heat Test Response": [
+                "No Response"
+            ],
+            "EPT Response": [
+                "No Response"
+            ],
+            "Percussion Test": [
+                "Negative",
+                "Positive"
+            ],
+            "Palpation Test": [
+                "Negative",
+                "Positive"
+            ],
+            "Periodontal Probing": [
+                "Normal"
+            ],
+            "Radiographic Findings": [
+                "Radiolucency",
+                "Normal"
+            ],
+            "Swelling / Sinus Tract": [
+                "Absent"
+            ]
         }
     },
     "generationGuidelines": {
