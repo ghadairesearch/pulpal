@@ -44,12 +44,17 @@
         ],
         "Previous Endodontic Treatment": [
             "Yes",
-            "No"
+            "No",
+            "Previously Initiated",
+            "Root Canal Treatment"
         ],
         "Cold Test Response": [
             "Normal",
+            "Negative",
             "Lingering",
-            "No Response"
+            "No Response",
+            "Inconclusive",
+            "Exaggerated"
         ],
         "Heat Test Response": [
             "Normal",
@@ -64,162 +69,654 @@
             "Negative",
             "Positive"
         ],
+        "Biting Test": [
+            "Negative",
+            "Positive"
+        ],
+        "Periodontal Probing": [
+            "Normal",
+            "Isolated Deep Pocket",
+            "Generalized Deep Pockets"
+        ],
         "Apical Diagnosis (AAE)": [
-            "Asymptomatic Apical Periodontitis",
-            "Chronic Apical Abscess",
-            "Chronic Apical Periodontitis",
-            "Normal Apical Tissues",
-            "Symptomatic Apical Periodontitis"
+            {
+                "name": "Normal Apical Tissues",
+                "definition": "Teeth with normal periapical tissues that are not sensitive to percussion or palpation testing. Lamina dura is intact and PDL space is uniform. Swelling and sinus tract are absent.",
+                "concise_summary": "No pain to percussion or palpation; intact lamina dura and uniform periodontal ligament space.",
+                "clinical_definition": "The apical tissues are clinically normal. They are not sensitive to percussion or palpation, and the surrounding lamina dura and PDL space are normal.",
+                "main_finding_pattern": "No pain to percussion/palpation/biting and normal apical radiograph",
+                "confirming_findings": "Uniform PDL space; intact lamina dura; no swelling or sinus tract.",
+                "patient_symptoms_chief_complaint": "No apical symptoms. Patient should not report pain on biting, chewing, percussion, or palpation from apical pathosis.",
+                "percussion": "Negative/normal; always compare with adjacent and contralateral teeth.",
+                "palpation": "Negative/normal over the apical mucosa.",
+                "bite_test_pressure": "Negative/normal; no pain on biting or pressure.",
+                "swelling_sinus_tract_systemic": "No swelling, no sinus tract, no suppuration, no fever or lymphadenopathy.",
+                "radiographic_findings": "Intact lamina dura, uniform periodontal ligament space, no apical radiolucency or inflammatory radiopacity.",
+                "pulpal_test_context": "Can be paired with many pulpal diagnoses, including normal pulp, reversible pulpitis, symptomatic irreversible pulpitis, asymptomatic irreversible pulpitis, necrotic pulp, previously treated, or previously initiated therapy. Pulp tests guide the pulpal diagnosis.",
+                "choose_this_diagnosis_when": "Select when periapical tests and radiographs are normal even if the pulp diagnosis is abnormal.",
+                "do_not_confuse_with": [
+                    "Symptomatic Irreversible Pulpitis"
+                ],
+                "do_not_confuse_with_note": "Symptomatic irreversible pulpitis with normal apical tissues can still have thermal pain. The apical diagnosis remains normal if apical tests are normal.",
+                "differentiate_from_common_pitfalls": "Do not confuse symptomatic apical periodontitis if the only pain is thermal/sweet pain without percussion, palpation, or biting tenderness. Early symptomatic irreversible pulpitis can still have normal apical tissues.",
+                "treatment_planning_note": "Treat according to the pulpal diagnosis/etiology; no apical treatment is needed beyond normal apical tissues."
+            },
+            {
+                "name": "Symptomatic Apical Periodontitis",
+                "definition": "Inflammation of apical periodontium producing clinical symptoms including painful response to biting and/or percussion or palpation. Radiograph may be normal, show widened PDL, or radiolucency.",
+                "concise_summary": "Pain on biting and/or percussion or palpation; may or may not have apical radiolucency.",
+                "clinical_definition": "Inflammation, usually of the apical periodontium, producing clinical symptoms such as pain to biting, percussion, and/or palpation.",
+                "main_finding_pattern": "Pain to biting, percussion, and/or palpation; radiograph may be normal or abnormal (\"Widened PDL\", \"Radiolucency\")",
+                "confirming_findings": "Reproducible tenderness to percussion, palpation, or bite test.",
+                "patient_symptoms_chief_complaint": "Pain or tenderness on biting/chewing; tooth may feel high in care. Pain may be localized by the patient better than pulpal thermal pain.",
+                "percussion": "Positive/tender. Severity can range from mild tenderness to severe pain.",
+                "palpation": "May be positive/tender over the apex if inflammation extends through cortical bone/periosteum.",
+                "bite_test_pressure": "Often positive to biting pressure. Tooth Slooth or customized bite may reproduce the complaint.",
+                "swelling_sinus_tract_systemic": "Usually no diffuse swelling or systemic signs. Local tenderness may exist without abscess formation.",
+                "radiographic_findings": "May show normal PDL with early, widened PDL, loss of lamina dura, or apical radiolucency depending on disease stage.",
+                "pulpal_test_context": "May be associated with vital inflamed pulp, pulp necrosis, previously treated teeth, or previously initiated therapy. Pulp tests determine the paired pulpal diagnosis.",
+                "choose_this_diagnosis_when": "Select when the key objective finding is pain to biting/percussion/palpation, with or without radiographic apical changes.",
+                "do_not_confuse_with": [
+                    "Acute Apical Abscess",
+                    "Cracked tooth",
+                    "Vertical root fracture"
+                ],
+                "do_not_confuse_with_note": "Acute apical abscess if swelling/pus/systemic signs are present; cracked tooth if bite/release pattern and isolated probing suggest fracture.",
+                "differentiate_from_common_pitfalls": "Differentiate from normal apical tissues by tenderness to percussion/palpation/bite. Differentiate from acute apical abscess by absence of pus, swelling, and systemic findings. Also differentiate from cracked tooth or primary periodontal disease.",
+                "treatment_planning_note": "Often indicates apical inflammation requiring management of the pulpal/endodontic cause and occlusal evaluation/occlusal reduction when present."
+            },
+            {
+                "name": "Asymptomatic Apical Periodontitis",
+                "definition": "Inflammation and destruction of apical periodontium of pulpal origin, appearing as apical radiolucency without clinical symptoms.",
+                "concise_summary": "Apical radiolucency/destruction of apical periodontium of pulpal origin, without clinical symptoms.",
+                "clinical_definition": "Inflammation and destruction of apical periodontium of pulpal origin, seen radiographically, without clinical symptoms.",
+                "main_finding_pattern": "Apical radiolucency but no pain to percussion or palpation",
+                "confirming_findings": "Radiographic apical bone destruction of pulpal origin, clinically asymptomatic.",
+                "patient_symptoms_chief_complaint": "No pain. Often discovered incidentally on radiographs.",
+                "percussion": "Negative/normal or not clinically painful.",
+                "palpation": "Negative/normal or not clinically painful.",
+                "bite_test_pressure": "Negative/normal; no complaint on biting.",
+                "swelling_sinus_tract_systemic": "No swelling, no sinus tract, no pus, no systemic signs.",
+                "radiographic_findings": "Apical radiolucency / osseous destruction of pulpal origin. PDL may be widened and lamina dura may be absent at the apex.",
+                "pulpal_test_context": "Usually paired with pulp necrosis or previously treated teeth, but the pulpal/endodontic status must be tested and documented separately.",
+                "choose_this_diagnosis_when": "Select when there is an apical radiolucency consistent with pulpal origin but the tooth is asymptomatic to percussion and palpation.",
+                "do_not_confuse_with": [
+                    "Chronic Apical Abscess",
+                    "Non-endodontic radiolucencies"
+                ],
+                "do_not_confuse_with_note": "Chronic apical abscess if a draining sinus tract is present; non-endodontic radiolucencies if pulpal origin is not confirmed.",
+                "differentiate_from_common_pitfalls": "Differentiate from chronic apical abscess by absence of a sinus tract/drainage. Differentiate from non-endodontic radiolucencies by confirming pulpal origin, periodontal probing, and anatomy.",
+                "treatment_planning_note": "Endodontic treatment/retreatment is indicated according to restorability, pulpal status, and prognosis."
+            },
+            {
+                "name": "Chronic Apical Abscess",
+                "definition": "An inflammatory reaction to pulpal infection and necrosis characterized by gradual onset, little or no discomfort, and intermittent discharge of pus through an associated sinus tract. Gutta-percha tracing typically confirms the involved root.",
+                "concise_summary": "Gradual onset, little or no discomfort, and intermittent pus discharge through a sinus tract associated with pulpal infection/necrosis.",
+                "clinical_definition": "Inflammatory reaction to pulpal infection and necrosis with gradual onset, little or no discomfort, and intermittent pus drainage through an associated sinus tract.",
+                "main_finding_pattern": "Sinus tract, parulis, or intermittent drainage with little/no discomfort",
+                "confirming_findings": "Gutta-percha tracing points to involved root/tooth; radiolucency commonly present.",
+                "patient_symptoms_chief_complaint": "Little or no pain. Patient may report a 'gum boil', intermittent drainage, bad taste, or recurring swelling that drains.",
+                "percussion": "Often normal or mildly tender; can vary.",
+                "palpation": "May be normal or mildly tender; palpate for a draining sinus/parulis.",
+                "bite_test_pressure": "Usually minimal pain unless acute exacerbation occurs.",
+                "swelling_sinus_tract_systemic": "Sinus tract/parulis is the key finding; intermittent purulent drainage may be present. Usually no fever/malaise unless it becomes acute.",
+                "radiographic_findings": "Typically apical radiolucency / osseous destruction. Trace a sinus tract with a gutta-percha cone and take a radiograph to identify the source.",
+                "pulpal_test_context": "Usually associated with pulp necrosis or a previously treated tooth with persistent/recurrent infection.",
+                "choose_this_diagnosis_when": "Select when a draining sinus tract or intermittent pus discharge is present and the source traces to the involved tooth.",
+                "commonly_confused_with": [
+                    "Acute Apical Abscess"
+                ],
+                "do_not_confuse_with": [
+                    "Periodontal abscess",
+                    "Vertical root fracture",
+                    "Acute Apical Abscess"
+                ],
+                "do_not_confuse_with_note": "Periodontal abscess, vertical root fracture, or acute apical abscess with active swelling/pain.",
+                "differentiate_from_common_pitfalls": "Differentiate from asymptomatic apical periodontitis by sinus tract/drainage. Differentiate from periodontal abscess by periodontal probing pattern and sinus tract tracing. Differentiate from acute apical abscess by gradual onset and minimal pain.",
+                "treatment_planning_note": "Trace the sinus tract before treatment whenever possible; treat the infected root canal system or consider retreatment/surgery/extraction depending on restorability and prognosis."
+            },
+            {
+                "name": "Acute Apical Abscess",
+                "definition": "An inflammatory reaction to pulpal infection and necrosis characterized by rapid onset, spontaneous pain, tenderness of tooth to pressure, pus formation, and swelling of associated tissues.",
+                "concise_summary": "Rapid onset, spontaneous pain, tenderness to pressure, pus formation, and swelling associated with pulpal infection/necrosis.",
+                "clinical_definition": "Inflammatory reaction to pulpal infection and necrosis with rapid onset, spontaneous pain, extreme tenderness to pressure, pus formation, and swelling of associated tissues.",
+                "main_finding_pattern": "Rapid onset spontaneous pain + swelling/pus + extreme tenderness to pressure",
+                "confirming_findings": "Localized or diffuse swelling; possible fever, malaise, lymphadenopathy; radiograph may be normal early.",
+                "patient_symptoms_chief_complaint": "Rapid onset, moderate to severe spontaneous pain; pain on pressure/biting; patient may report swelling.",
+                "percussion": "Usually very positive; tooth is extremely tender to pressure/percussion.",
+                "palpation": "Often positive with localized or diffuse soft-tissue tenderness/swelling.",
+                "bite_test_pressure": "Very painful to bite or touch; tooth may feel elevated/high.",
+                "swelling_sinus_tract_systemic": "Swelling and pus formation are key. Fever, malaise, and lymphadenopathy may be present; assess airway/fascial-space risk.",
+                "radiographic_findings": "May show no apical radiographic destruction early, or may show widened PDL/apical radiolucency depending on stage.",
+                "pulpal_test_context": "Usually associated with pulp necrosis or infected previously treated root canal system.",
+                "choose_this_diagnosis_when": "Select when rapid painful swelling/pus is present with severe pressure tenderness, even if the radiograph does not yet show an apical radiolucency.",
+                "do_not_confuse_with": [
+                    "Symptomatic Apical Periodontitis",
+                    "Chronic Apical Abscess"
+                ],
+                "do_not_confuse_with_note": "Symptomatic apical periodontitis without swelling; chronic apical abscess with a draining sinus and minimal pain.",
+                "differentiate_from_common_pitfalls": "Differentiate from symptomatic apical periodontitis by swelling/pus/systemic signs. Differentiate from chronic apical abscess by acute pain, rapid onset, and tissue swelling. Rule out non-endodontic fascial space infections or periodontal abscess.",
+                "treatment_planning_note": "Urgency depends on severity/systemic involvement. Manage source of infection, drainage when indicated, analgesia, and medical referral/antibiotics only when systemic signs or spreading infection exist."
+            },
+            {
+                "name": "Condensing osteitis",
+                "definition": "Diffuse radiopaque lesion representing a localized bony reaction to a low-grade inflammatory stimulus, usually seen at the apex of tooth with extensive caries or long-standing pulp irritation.",
+                "concise_summary": "Diffuse radiopaque lesion at the apex caused by localized bone reaction to low-grade inflammatory stimulus.",
+                "clinical_definition": "Diffuse radiopaque lesion representing a localized bony reaction to a low-grade inflammatory stimulus, usually at the tooth apex.",
+                "main_finding_pattern": "Periapical radiopacity/sclerosis associated with an endodontic inflammatory source",
+                "confirming_findings": "Diffuse radiopaque apical lesion; often deep caries/large restoration/necrotic or chronically inflamed pulp.",
+                "patient_symptoms_chief_complaint": "Symptoms vary; may be asymptomatic, or may have a variety of chronic low-grade pulpal symptoms; can coexist with symptomatic apical periodontitis.",
+                "percussion": "May be normal or positive depending on current apical inflammation.",
+                "palpation": "May be normal or positive depending on current apical inflammation.",
+                "bite_test_pressure": "May be normal or tender if associated with symptomatic apical periodontitis.",
+                "swelling_sinus_tract_systemic": "No sinus tract or swelling unless another apical diagnosis/abscess is also present.",
+                "radiographic_findings": "Periapical radiopacity/sclerotic bone around the apex, often diffuse. Look for association with deep caries, large restorations, necrosis, or chronic pulpal inflammation.",
+                "pulpal_test_context": "Usually associated with chronic pulpal inflammation, pulp necrosis, or a low-grade irritant. Pulp tests guide the paired pulpal diagnosis.",
+                "choose_this_diagnosis_when": "Select when the key apical radiographic finding is inflammatory periapical radiopacity rather than radiolucency, and the tooth has an endodontic inflammatory source.",
+                "do_not_confuse_with": [
+                    "Idiopathic osteosclerosis",
+                    "Cemento-osseous dysplasia",
+                    "Hypercementosis",
+                    "Anatomic radiopacity"
+                ],
+                "do_not_confuse_with_note": "Idiopathic osteosclerosis, cemento-osseous dysplasia, hypercementosis, anatomic radiopacity.",
+                "differentiate_from_common_pitfalls": "Differentiate from idiopathic osteosclerosis, cemento-osseous dysplasia, hypercementosis, condensing bone, or normal anatomic radiopacity. The key is establishing that the lesion is linked to an endodontic inflammatory source.",
+                "treatment_planning_note": "Treat the pulp/endodontic source when indicated; sclerosis may regress partially or completely over time after successful treatment."
+            },
+            {
+                "name": "Chronic Apical Periodontitis",
+                "definition": "A longstanding low-grade periapical lesion characterized by radiographic radiolucency and minimal or localized discomfort."
+            }
         ],
         "Pulp Diagnosis (AAE)": [
-            "Normal Pulp",
-            "Reversible Pulpitis",
-            "Symptomatic Irreversible Pulpitis",
-            "Asymptomatic Irreversible Pulpitis",
-            "Pulp Necrosis",
-            "Previously Treated",
-            "Previously Initiated Therapy"
+            {
+                "name": "Normal Pulp",
+                "definition": "A clinical diagnostic category in which the pulp is symptom-free and normally responsive to pulp testing.",
+                "if_you_find": "No symptoms + normal cold/EPT response",
+                "required_supporting_findings": "Normal response compared with controls; no disease-driving history or signs.",
+                "what_would_change_diagnosis": "Symptoms with cold/sweets would shift toward reversible pulpitis; no response would require necrosis/previously treated evaluation.",
+                "common_mistake_to_avoid": "Calling a tooth normal without testing controls.",
+                "add_apical_diagnosis_based_on": "Percussion/palpation/PDL/radiograph findings."
+            },
+            {
+                "name": "Reversible Pulpitis",
+                "definition": "A clinical diagnosis based on subjective and objective findings indicating that inflammation should resolve and the pulp return to normal after management of the cause.",
+                "if_you_find": "Cold/sweet sensitivity that stops quickly",
+                "required_supporting_findings": "Provoked pain only; no spontaneous pain; no lingering; identifiable reversible cause.",
+                "what_would_change_diagnosis": "Lingering thermal pain or spontaneous pain shifts to symptomatic irreversible pulpitis.",
+                "common_mistake_to_avoid": "Using pain intensity alone; intensity may be high but still reversible if brief and stimulus-bound.",
+                "add_apical_diagnosis_based_on": "Percussion/palpation/radiograph findings."
+            },
+            {
+                "name": "Symptomatic Irreversible Pulpitis",
+                "definition": "A clinical diagnosis indicating a vital inflamed pulp that is incapable of healing; descriptors include lingering thermal pain, spontaneous pain, and referred pain.",
+                "commonly_confused_with": [
+                    "Asymptomatic Irreversible Pulpitis"
+                ],
+                "if_you_find": "Lingering cold/heat pain, spontaneous pain, or referred pain in a vital tooth",
+                "required_supporting_findings": "Thermal test reproduces lingering pain; tooth responds to sensibility testing; deep caries/restoration/crack history likely.",
+                "what_would_change_diagnosis": "No response to cold/EPT shifts toward necrosis; no symptoms with exposure/deep caries may be asymptomatic irreversible.",
+                "common_mistake_to_avoid": "Ruling it out because percussion is normal.",
+                "add_apical_diagnosis_based_on": "Percussion/biting/palpation/radiograph findings."
+            },
+            {
+                "name": "Asymptomatic Irreversible Pulpitis",
+                "definition": "A clinical diagnosis indicating a vital inflamed pulp incapable of healing, with no clinical symptoms; inflammation is produced by caries, caries excavation, trauma, etc.",
+                "commonly_confused_with": [
+                    "Symptomatic Irreversible Pulpitis",
+                    "Pulp Necrosis"
+                ],
+                "if_you_find": "No symptoms but carious/mechanical/traumatic exposure or deep caries likely to expose the pulp",
+                "required_supporting_findings": "Vital response usually present; no clinical symptoms; clinical finding indicates pulp cannot heal.",
+                "what_would_change_diagnosis": "Brief stimulus pain without exposure and removable cause may be reversible pulpitis.",
+                "common_mistake_to_avoid": "Assuming no pain means no endodontic disease.",
+                "add_apical_diagnosis_based_on": "Percussion/palpation/radiograph findings."
+            },
+            {
+                "name": "Pulp Necrosis",
+                "definition": "A clinical diagnostic category indicating death of the dental pulp; the pulp is usually nonresponsive to pulp testing.",
+                "commonly_confused_with": [
+                    "Asymptomatic Irreversible Pulpitis"
+                ],
+                "if_you_find": "No response to cold/EPT compared with responsive controls",
+                "required_supporting_findings": "Consistent history/signs: trauma, discoloration, deep caries, previous pulpitis, apical findings, sinus/swelling.",
+                "what_would_change_diagnosis": "Root-filled canals = previously treated; partial therapy = previously initiated; recent trauma/calcification can give false negative.",
+                "common_mistake_to_avoid": "Diagnosing necrosis from one failed cold test without controls.",
+                "add_apical_diagnosis_based_on": "Normal vs symptomatic/asymptomatic apical periodontitis vs abscess vs condensing osteitis."
+            },
+            {
+                "name": "Previously Treated",
+                "definition": "A clinical diagnostic category indicating that the tooth has been endodontically treated and the canals are obturated with filling materials other than intracanal medicaments.",
+                "if_you_find": "Canals are obturated/root-filled",
+                "required_supporting_findings": "Radiographic evidence of completed endodontic treatment.",
+                "what_would_change_diagnosis": "If canals are only partially treated/not obturated, use previously initiated therapy.",
+                "common_mistake_to_avoid": "Calling it necrotic when the pulp has already been removed/treated.",
+                "add_apical_diagnosis_based_on": "Percussion/palpation/radiograph/sinus/swelling."
+            },
+            {
+                "name": "Previously Initiated Therapy",
+                "definition": "A clinical diagnostic category indicating that the tooth has previously received partial endodontic therapy, such as pulpotomy or pulpectomy.",
+                "if_you_find": "Pulpotomy/pulpectomy/open access/incomplete endo therapy",
+                "required_supporting_findings": "History or radiographic/clinical evidence of partial endodontic therapy.",
+                "what_would_change_diagnosis": "If fully obturated, use previously treated.",
+                "common_mistake_to_avoid": "Interpreting pulp tests normally when partial therapy may make responses unreliable.",
+                "add_apical_diagnosis_based_on": "Percussion/palpation/radiograph/sinus/swelling."
+            }
         ]
     },
     "commonCombinations": [
         {
             "pulp": "Normal Pulp",
             "apical": "Normal Apical Tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space.",
             "final": "Normal Pulp with Normal Apical Tissues"
         },
         {
             "pulp": "Reversible Pulpitis",
             "apical": "Normal Apical Tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space.",
             "final": "Reversible Pulpitis with Normal Apical Tissues"
         },
         {
             "pulp": "Symptomatic Irreversible Pulpitis",
             "apical": "Normal Apical Tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space.",
             "final": "Symptomatic Irreversible Pulpitis with Normal Apical Tissues"
         },
         {
             "pulp": "Symptomatic Irreversible Pulpitis",
             "apical": "Symptomatic Apical Periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when biting, percussion, or palpation reproduces apical/periradicular pain; radiolucency may or may not be present.",
             "final": "Symptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis"
         },
         {
             "pulp": "Asymptomatic Irreversible Pulpitis",
             "apical": "Normal Apical Tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space.",
             "final": "Asymptomatic Irreversible Pulpitis with Normal Apical Tissues"
+        },
+        {
+            "pulp": "Asymptomatic Irreversible Pulpitis",
+            "apical": "Condensing osteitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Can coexist when chronic low-grade pulpal inflammation produces a radiopaque periapical bone reaction.",
+            "final": "Asymptomatic Irreversible Pulpitis with Condensing osteitis"
         },
         {
             "pulp": "Pulp Necrosis",
             "apical": "Normal Apical Tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space.",
             "final": "Pulp Necrosis with Normal Apical Tissues"
         },
         {
             "pulp": "Pulp Necrosis",
             "apical": "Symptomatic Apical Periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when biting, percussion, or palpation reproduces apical/periradicular pain; radiolucency may or may not be present.",
             "final": "Pulp Necrosis with Symptomatic Apical Periodontitis"
         },
         {
             "pulp": "Pulp Necrosis",
             "apical": "Asymptomatic Apical Periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when a radiolucent apical lesion of pulpal origin is present without clinical symptoms.",
             "final": "Pulp Necrosis with Asymptomatic Apical Periodontitis"
         },
         {
             "pulp": "Pulp Necrosis",
-            "apical": "Chronic Apical Periodontitis",
-            "final": "Pulp Necrosis with Chronic Apical Periodontitis"
-        },
-        {
-            "pulp": "Pulp Necrosis",
             "apical": "Chronic Apical Abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with a sinus tract or intermittent pus drainage from a pulpal infection/necrosis or infected root canal system.",
             "final": "Pulp Necrosis with Chronic Apical Abscess"
         },
         {
-            "pulp": "Previously Initiated Therapy",
-            "apical": "Normal Apical Tissues",
-            "final": "Previously Initiated with Normal Apical Tissues"
+            "pulp": "Pulp Necrosis",
+            "apical": "Acute Apical Abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with rapid onset, spontaneous pain, tenderness to pressure, pus formation, and swelling from pulpal infection/necrosis.",
+            "final": "Pulp Necrosis with Acute Apical Abscess"
         },
         {
-            "pulp": "Previously Initiated Therapy",
-            "apical": "Symptomatic Apical Periodontitis",
-            "final": "Previously Initiated with Symptomatic Apical Periodontitis"
-        },
-        {
-            "pulp": "Previously Initiated Therapy",
-            "apical": "Chronic Apical Abscess",
-            "final": "Previously Initiated with Chronic Apical Abscess"
+            "pulp": "Pulp Necrosis",
+            "apical": "Condensing osteitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is a diffuse radiopaque lesion at the apex representing localized bony reaction to low-grade inflammatory stimulus.",
+            "final": "Pulp Necrosis with Condensing osteitis"
         },
         {
             "pulp": "Previously Treated",
             "apical": "Normal Apical Tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space.",
             "final": "Previously Treated with Normal Apical Tissues"
         },
         {
             "pulp": "Previously Treated",
             "apical": "Symptomatic Apical Periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when biting, percussion, or palpation reproduces apical/periradicular pain; radiolucency may or may not be present.",
             "final": "Previously Treated with Symptomatic Apical Periodontitis"
         },
         {
             "pulp": "Previously Treated",
             "apical": "Asymptomatic Apical Periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when a radiolucent apical lesion of pulpal origin is present without clinical symptoms.",
             "final": "Previously Treated with Asymptomatic Apical Periodontitis"
         },
         {
             "pulp": "Previously Treated",
-            "apical": "Chronic Apical Periodontitis",
-            "final": "Previously Treated with Chronic Apical Periodontitis"
+            "apical": "Chronic Apical Abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with a sinus tract or intermittent pus drainage from a pulpal infection/necrosis or infected root canal system.",
+            "final": "Previously Treated with Chronic Apical Abscess"
         },
         {
             "pulp": "Previously Treated",
+            "apical": "Acute Apical Abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with rapid onset, spontaneous pain, tenderness to pressure, pus formation, and swelling from pulpal infection/necrosis.",
+            "final": "Previously Treated with Acute Apical Abscess"
+        },
+        {
+            "pulp": "Previously Initiated Therapy",
+            "apical": "Normal Apical Tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space.",
+            "final": "Previously Initiated with Normal Apical Tissues"
+        },
+        {
+            "pulp": "Previously Initiated Therapy",
+            "apical": "Symptomatic Apical Periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when biting, percussion, or palpation reproduces apical/periradicular pain; radiolucency may or may not be present.",
+            "final": "Previously Initiated with Symptomatic Apical Periodontitis"
+        },
+        {
+            "pulp": "Previously Initiated Therapy",
+            "apical": "Asymptomatic Apical Periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when a radiolucent apical lesion of pulpal origin is present without clinical symptoms.",
+            "final": "Previously Initiated with Asymptomatic Apical Periodontitis"
+        },
+        {
+            "pulp": "Previously Initiated Therapy",
             "apical": "Chronic Apical Abscess",
-            "final": "Previously Treated with Chronic Apical Abscess"
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with a sinus tract or intermittent pus drainage from a pulpal infection/necrosis or infected root canal system.",
+            "final": "Previously Initiated with Chronic Apical Abscess"
+        },
+        {
+            "pulp": "Previously Initiated Therapy",
+            "apical": "Acute Apical Abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with rapid onset, spontaneous pain, tenderness to pressure, pus formation, and swelling from pulpal infection/necrosis.",
+            "final": "Previously Initiated with Acute Apical Abscess"
         }
     ],
     "conditionalCombinations": [
         {
             "pulp": "Normal Pulp",
             "apical": "Symptomatic Apical Periodontitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Conditional only when percussion/biting tenderness is not from pulpal inflammation, e.g., trauma/occlusion/crack. Under newer 2025 terminology this may be described as apical hypersensitivity, not classic pulpal-origin SAP.",
             "final": "Normal Pulp with Symptomatic Apical Periodontitis"
         },
         {
             "pulp": "Reversible Pulpitis",
             "apical": "Symptomatic Apical Periodontitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Conditional for non-pulpal/periradicular irritation; classic reversible pulpitis usually has normal apical tissues.",
             "final": "Reversible Pulpitis with Symptomatic Apical Periodontitis"
         },
         {
             "pulp": "Symptomatic Irreversible Pulpitis",
-            "apical": "Condensing Osteitis",
-            "final": "Symptomatic Irreversible Pulpitis with Condensing Osteitis"
+            "apical": "Condensing osteitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Possible if a chronic low-grade inflammatory stimulus has produced a radiopaque periapical response; less common than normal apical tissues or symptomatic apical periodontitis.",
+            "final": "Symptomatic Irreversible Pulpitis with Condensing osteitis"
         },
         {
             "pulp": "Asymptomatic Irreversible Pulpitis",
             "apical": "Symptomatic Apical Periodontitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Conditional when the pulp is clinically vital/asymptomatic but the apical tissues are tender; verify occlusion/crack/periodontal causes and compare with control teeth.",
             "final": "Asymptomatic Irreversible Pulpitis with Symptomatic Apical Periodontitis"
         },
         {
             "pulp": "Previously Treated",
-            "apical": "Condensing Osteitis",
-            "final": "Previously Treated with Condensing Osteitis"
+            "apical": "Condensing osteitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Possible if the radiopacity represents active/persistent inflammatory reaction; distinguish from residual sclerosis/healing or idiopathic osteosclerosis.",
+            "final": "Previously Treated with Condensing osteitis"
         },
         {
             "pulp": "Previously Initiated Therapy",
-            "apical": "Condensing Osteitis",
-            "final": "Previously Initiated with Condensing Osteitis"
+            "apical": "Condensing osteitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Possible depending on the original disease and current findings; distinguish active inflammatory CO from residual/healing sclerosis.",
+            "final": "Previously Initiated with Condensing osteitis"
+        }
+    ],
+    "pulpalApicalDiagnosticCombinations": [
+        {
+            "row_index": 1,
+            "pulpal_diagnosis": "Normal pulp",
+            "apical_diagnosis": "Normal apical tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space."
+        },
+        {
+            "row_index": 2,
+            "pulpal_diagnosis": "Normal pulp",
+            "apical_diagnosis": "Symptomatic apical periodontitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Conditional only when percussion/biting tenderness is not from pulpal inflammation, e.g., trauma/occlusion/crack. Under newer 2025 terminology this may be described as apical hypersensitivity, not classic pulpal-origin SAP."
+        },
+        {
+            "row_index": 3,
+            "pulpal_diagnosis": "Reversible pulpitis",
+            "apical_diagnosis": "Normal apical tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space."
+        },
+        {
+            "row_index": 4,
+            "pulpal_diagnosis": "Reversible pulpitis",
+            "apical_diagnosis": "Symptomatic apical periodontitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Conditional for non-pulpal/periradicular irritation; classic reversible pulpitis usually has normal apical tissues."
+        },
+        {
+            "row_index": 5,
+            "pulpal_diagnosis": "Symptomatic irreversible pulpitis",
+            "apical_diagnosis": "Normal apical tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space."
+        },
+        {
+            "row_index": 6,
+            "pulpal_diagnosis": "Symptomatic irreversible pulpitis",
+            "apical_diagnosis": "Symptomatic apical periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when biting, percussion, or palpation reproduces apical/periradicular pain; radiolucency may or may not be present."
+        },
+        {
+            "row_index": 7,
+            "pulpal_diagnosis": "Symptomatic irreversible pulpitis",
+            "apical_diagnosis": "Condensing osteitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Possible if a chronic low-grade inflammatory stimulus has produced a radiopaque periapical response; less common than normal apical tissues or symptomatic apical periodontitis."
+        },
+        {
+            "row_index": 8,
+            "pulpal_diagnosis": "Asymptomatic irreversible pulpitis",
+            "apical_diagnosis": "Normal apical tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space."
+        },
+        {
+            "row_index": 9,
+            "pulpal_diagnosis": "Asymptomatic irreversible pulpitis",
+            "apical_diagnosis": "Symptomatic apical periodontitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Conditional when the pulp is clinically vital/asymptomatic but the apical tissues are tender; verify occlusion/crack/periodontal causes and compare with control teeth."
+        },
+        {
+            "row_index": 10,
+            "pulpal_diagnosis": "Asymptomatic irreversible pulpitis",
+            "apical_diagnosis": "Condensing osteitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Can coexist when chronic low-grade pulpal inflammation produces a radiopaque periapical bone reaction."
+        },
+        {
+            "row_index": 11,
+            "pulpal_diagnosis": "Pulp necrosis",
+            "apical_diagnosis": "Normal apical tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space."
+        },
+        {
+            "row_index": 12,
+            "pulpal_diagnosis": "Pulp necrosis",
+            "apical_diagnosis": "Symptomatic apical periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when biting, percussion, or palpation reproduces apical/periradicular pain; radiolucency may or may not be present."
+        },
+        {
+            "row_index": 13,
+            "pulpal_diagnosis": "Pulp necrosis",
+            "apical_diagnosis": "Asymptomatic apical periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when a radiolucent apical lesion of pulpal origin is present without clinical symptoms."
+        },
+        {
+            "row_index": 14,
+            "pulpal_diagnosis": "Pulp necrosis",
+            "apical_diagnosis": "Chronic apical abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with a sinus tract or intermittent pus drainage from a pulpal infection/necrosis or infected root canal system."
+        },
+        {
+            "row_index": 15,
+            "pulpal_diagnosis": "Pulp necrosis",
+            "apical_diagnosis": "Acute apical abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with rapid onset, spontaneous pain, tenderness to pressure, pus formation, and swelling from pulpal infection/necrosis."
+        },
+        {
+            "row_index": 16,
+            "pulpal_diagnosis": "Pulp necrosis",
+            "apical_diagnosis": "Condensing osteitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is a diffuse radiopaque lesion at the apex representing localized bony reaction to low-grade inflammatory stimulus."
+        },
+        {
+            "row_index": 17,
+            "pulpal_diagnosis": "Previously treated",
+            "apical_diagnosis": "Normal apical tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space."
+        },
+        {
+            "row_index": 18,
+            "pulpal_diagnosis": "Previously treated",
+            "apical_diagnosis": "Symptomatic apical periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when biting, percussion, or palpation reproduces apical/periradicular pain; radiolucency may or may not be present."
+        },
+        {
+            "row_index": 19,
+            "pulpal_diagnosis": "Previously treated",
+            "apical_diagnosis": "Asymptomatic apical periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when a radiolucent apical lesion of pulpal origin is present without clinical symptoms."
+        },
+        {
+            "row_index": 20,
+            "pulpal_diagnosis": "Previously treated",
+            "apical_diagnosis": "Chronic apical abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with a sinus tract or intermittent pus drainage from a pulpal infection/necrosis or infected root canal system."
+        },
+        {
+            "row_index": 21,
+            "pulpal_diagnosis": "Previously treated",
+            "apical_diagnosis": "Acute apical abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with rapid onset, spontaneous pain, tenderness to pressure, pus formation, and swelling from pulpal infection/necrosis."
+        },
+        {
+            "row_index": 22,
+            "pulpal_diagnosis": "Previously treated",
+            "apical_diagnosis": "Condensing osteitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Possible if the radiopacity represents active/persistent inflammatory reaction; distinguish from residual sclerosis/healing or idiopathic osteosclerosis."
+        },
+        {
+            "row_index": 23,
+            "pulpal_diagnosis": "Previously initiated therapy",
+            "apical_diagnosis": "Normal apical tissues",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when there is no tenderness to percussion/palpation and radiographs show intact lamina dura/uniform PDL space."
+        },
+        {
+            "row_index": 24,
+            "pulpal_diagnosis": "Previously initiated therapy",
+            "apical_diagnosis": "Symptomatic apical periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when biting, percussion, or palpation reproduces apical/periradicular pain; radiolucency may or may not be present."
+        },
+        {
+            "row_index": 25,
+            "pulpal_diagnosis": "Previously initiated therapy",
+            "apical_diagnosis": "Asymptomatic apical periodontitis",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use when a radiolucent apical lesion of pulpal origin is present without clinical symptoms."
+        },
+        {
+            "row_index": 26,
+            "pulpal_diagnosis": "Previously initiated therapy",
+            "apical_diagnosis": "Chronic apical abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with a sinus tract or intermittent pus drainage from a pulpal infection/necrosis or infected root canal system."
+        },
+        {
+            "row_index": 27,
+            "pulpal_diagnosis": "Previously initiated therapy",
+            "apical_diagnosis": "Acute apical abscess",
+            "pairing_status": "Possible / common",
+            "clinical_guidance": "Use with rapid onset, spontaneous pain, tenderness to pressure, pus formation, and swelling from pulpal infection/necrosis."
+        },
+        {
+            "row_index": 28,
+            "pulpal_diagnosis": "Previously initiated therapy",
+            "apical_diagnosis": "Condensing osteitis",
+            "pairing_status": "Conditional / verify carefully",
+            "clinical_guidance": "Possible depending on the original disease and current findings; distinguish active inflammatory CO from residual/healing sclerosis."
         }
     ],
     "invalidCombinations": [
         {
             "pulp": "Normal Pulp",
             "apical": "Asymptomatic Apical Periodontitis",
-            "reason": "Normal pulp does not cause apical periodontitis"
+            "reason": "3. Asymptomatic apical periodontitis is defined as apical destruction of pulpal origin with a radiolucency and no clinical symptoms; if the pulp appears vital/normal, consider non-endodontic or non-pulpal causes."
         },
         {
             "pulp": "Normal Pulp",
             "apical": "Chronic Apical Abscess",
-            "reason": "Normal pulp does not cause apical abscesses"
+            "reason": "Acute and chronic apical abscess require pulpal infection/necrosis, so they pair with necrotic, previously treated, or previously initiated teeth—not with vital normal/reversible/irreversible pulpitis diagnoses."
         },
         {
             "pulp": "Normal Pulp",
             "apical": "Acute Apical Abscess",
-            "reason": "Normal pulp does not cause apical abscesses"
+            "reason": "Acute and chronic apical abscess require pulpal infection/necrosis, so they pair with necrotic, previously treated, or previously initiated teeth—not with vital normal/reversible/irreversible pulpitis diagnoses."
         },
         {
             "pulp": "Normal Pulp",
@@ -234,12 +731,12 @@
         {
             "pulp": "Reversible Pulpitis",
             "apical": "Chronic Apical Abscess",
-            "reason": "Reversible pulpitis does not cause apical abscesses"
+            "reason": "Acute and chronic apical abscess require pulpal infection/necrosis, so they pair with necrotic, previously treated, or previously initiated teeth—not with vital normal/reversible/irreversible pulpitis diagnoses."
         },
         {
             "pulp": "Reversible Pulpitis",
             "apical": "Acute Apical Abscess",
-            "reason": "Reversible pulpitis does not cause apical abscesses"
+            "reason": "Acute and chronic apical abscess require pulpal infection/necrosis, so they pair with necrotic, previously treated, or previously initiated teeth—not with vital normal/reversible/irreversible pulpitis diagnoses."
         },
         {
             "pulp": "Reversible Pulpitis",
@@ -254,12 +751,12 @@
         {
             "pulp": "Symptomatic Irreversible Pulpitis",
             "apical": "Chronic Apical Abscess",
-            "reason": "Symptomatic irreversible pulpitis does not cause chronic apical abscesses"
+            "reason": "Acute and chronic apical abscess require pulpal infection/necrosis, so they pair with necrotic, previously treated, or previously initiated teeth—not with vital normal/reversible/irreversible pulpitis diagnoses."
         },
         {
             "pulp": "Symptomatic Irreversible Pulpitis",
             "apical": "Acute Apical Abscess",
-            "reason": "Symptomatic irreversible pulpitis does not cause acute apical abscesses"
+            "reason": "Acute and chronic apical abscess require pulpal infection/necrosis, so they pair with necrotic, previously treated, or previously initiated teeth—not with vital normal/reversible/irreversible pulpitis diagnoses."
         },
         {
             "pulp": "Asymptomatic Irreversible Pulpitis",
@@ -269,46 +766,150 @@
         {
             "pulp": "Asymptomatic Irreversible Pulpitis",
             "apical": "Chronic Apical Abscess",
-            "reason": "Asymptomatic irreversible pulpitis does not cause chronic apical abscesses"
+            "reason": "Acute and chronic apical abscess require pulpal infection/necrosis, so they pair with necrotic, previously treated, or previously initiated teeth—not with vital normal/reversible/irreversible pulpitis diagnoses."
         },
         {
             "pulp": "Asymptomatic Irreversible Pulpitis",
             "apical": "Acute Apical Abscess",
-            "reason": "Asymptomatic irreversible pulpitis does not cause acute apical abscesses"
+            "reason": "Acute and chronic apical abscess require pulpal infection/necrosis, so they pair with necrotic, previously treated, or previously initiated teeth—not with vital normal/reversible/irreversible pulpitis diagnoses."
         }
     ],
     "diagnosticRules": [
         {
-            "id": "rule_1",
-            "conditions": {
-                "Swelling / Sinus Tract": "Present"
-            },
-            "diagnosis": "Chronic Apical Periodontitis",
-            "description": "If Swelling or a Sinus Tract is present, the diagnosis defaults to Chronic Apical Periodontitis."
+            "id": "rule_Normal_Apical_Tissues",
+            "name": "Normal apical tissues",
+            "most_likely_periapical_diagnosis": "Normal apical tissues",
+            "main_finding_pattern": "No pain to percussion/palpation/biting and normal apical radiograph",
+            "confirming_findings": "Uniform PDL space; intact lamina dura; no swelling or sinus tract.",
+            "do_not_confuse_with": [
+                "Symptomatic Irreversible Pulpitis"
+            ],
+            "do_not_confuse_with_note": "Symptomatic irreversible pulpitis with normal apical tissues can still have thermal pain. The apical diagnosis remains normal if apical tests are normal."
         },
         {
-            "id": "rule_2",
-            "conditions": {
-                "Percussion Test": "Positive",
-                "Radiographic Periapical Findings": "Radiolucency"
-            },
-            "diagnosis": "Symptomatic Apical Periodontitis",
-            "description": "If percussion is positive and there is a radiographic radiolucency (and no swelling), the diagnosis is Symptomatic Apical Periodontitis."
+            "id": "rule_Symptomatic_Apical_Periodontitis",
+            "name": "Symptomatic apical periodontitis",
+            "most_likely_periapical_diagnosis": "Symptomatic apical periodontitis",
+            "main_finding_pattern": "Pain to biting, percussion, and/or palpation; radiograph may be normal or abnormal (\"Widened PDL\", \"Radiolucency\")",
+            "confirming_findings": "Reproducible tenderness to percussion, palpation, or bite test.",
+            "do_not_confuse_with": [
+                "Acute apical abscess",
+                "Cracked tooth",
+                "Vertical root fracture"
+            ],
+            "do_not_confuse_with_note": "Acute apical abscess if swelling/pus/systemic signs are present; cracked tooth if bite/release pattern and isolated probing suggest fracture."
         },
         {
-            "id": "rule_3",
-            "conditions": {
-                "Percussion Test": "Negative",
-                "Radiographic Periapical Findings": "Normal"
-            },
-            "diagnosis": "Normal Apical Tissues",
-            "description": "If percussion is negative, radiographic findings are normal, and there is no swelling, the periapical tissues are normal."
+            "id": "rule_Asymptomatic_Apical_Periodontitis",
+            "name": "Asymptomatic apical periodontitis",
+            "most_likely_periapical_diagnosis": "Asymptomatic apical periodontitis",
+            "main_finding_pattern": "Apical radiolucency but no pain to percussion or palpation",
+            "confirming_findings": "Radiographic apical bone destruction of pulpal origin, clinically asymptomatic.",
+            "do_not_confuse_with": [
+                "Chronic apical abscess",
+                "Non-endodontic radiolucencies"
+            ],
+            "do_not_confuse_with_note": "Chronic apical abscess if a draining sinus tract is present; non-endodontic radiolucencies if pulpal origin is not confirmed."
         },
         {
-            "id": "rule_fallback",
-            "conditions": {},
-            "diagnosis": "Asymptomatic Apical Periodontitis",
-            "description": "If conditions do not perfectly match the above rules (e.g., negative percussion but a radiolucency is present), the diagnosis defaults to Asymptomatic Apical Periodontitis."
+            "id": "rule_Chronic_Apical_Abscess",
+            "name": "Chronic apical abscess",
+            "most_likely_periapical_diagnosis": "Chronic apical abscess",
+            "main_finding_pattern": "Sinus tract, parulis, or intermittent drainage with little/no discomfort",
+            "confirming_findings": "Gutta-percha tracing points to involved root/tooth; radiolucency commonly present.",
+            "do_not_confuse_with": [
+                "Periodontal abscess",
+                "Vertical root fracture",
+                "Acute apical abscess"
+            ],
+            "do_not_confuse_with_note": "Periodontal abscess, vertical root fracture, or acute apical abscess with active swelling/pain."
+        },
+        {
+            "id": "rule_Acute_Apical_Abscess",
+            "name": "Acute apical abscess",
+            "most_likely_periapical_diagnosis": "Acute apical abscess",
+            "main_finding_pattern": "Rapid onset spontaneous pain + swelling/pus + extreme tenderness to pressure",
+            "confirming_findings": "Localized or diffuse swelling; possible fever, malaise, lymphadenopathy; radiograph may be normal early.",
+            "do_not_confuse_with": [
+                "Symptomatic apical periodontitis",
+                "Chronic apical abscess"
+            ],
+            "do_not_confuse_with_note": "Symptomatic apical periodontitis without swelling; chronic apical abscess with a draining sinus and minimal pain."
+        },
+        {
+            "id": "rule_Condensing_Osteitis",
+            "name": "Condensing osteitis",
+            "most_likely_periapical_diagnosis": "Condensing osteitis",
+            "main_finding_pattern": "Periapical radiopacity/sclerosis associated with an endodontic inflammatory source",
+            "confirming_findings": "Diffuse radiopaque apical lesion; often deep caries/large restoration/necrotic or chronically inflamed pulp.",
+            "do_not_confuse_with": [
+                "Idiopathic osteosclerosis",
+                "Cemento-osseous dysplasia",
+                "Hypercementosis",
+                "Anatomic radiopacity"
+            ],
+            "do_not_confuse_with_note": "Idiopathic osteosclerosis, cemento-osseous dysplasia, hypercementosis, anatomic radiopacity."
+        },
+        {
+            "id": "rule_Normal_Radiograph_Acute_Abscess_Possible",
+            "name": "Acute apical abscess possible with normal radiograph",
+            "most_likely_periapical_diagnosis": "Acute apical abscess is still possible",
+            "main_finding_pattern": "Radiograph is normal but patient has severe pressure tenderness and swelling",
+            "confirming_findings": "AAE notes acute apical abscess may have no radiographic signs of destruction.",
+            "do_not_confuse_with": [
+                "Normal apical tissues"
+            ],
+            "do_not_confuse_with_note": "Do not downgrade to normal apical tissues only because the radiograph is normal."
+        },
+        {
+            "id": "rule_Radiolucency_Painful_Percussion_Symptomatic",
+            "name": "Radiolucency with painful percussion",
+            "most_likely_periapical_diagnosis": "Symptomatic apical periodontitis, unless abscess signs are present",
+            "main_finding_pattern": "Radiograph shows apical radiolucency but percussion is painful",
+            "confirming_findings": "Pain to percussion/palpation makes the apical lesion symptomatic.",
+            "do_not_confuse_with": [
+                "Asymptomatic apical periodontitis",
+                "Acute apical abscess"
+            ],
+            "do_not_confuse_with_note": "Asymptomatic apical periodontitis requires no clinical symptoms; acute abscess requires swelling/pus/rapid onset."
+        }
+    ],
+    "clinicalDiagnosticSummaryTable": [
+        {
+            "concept": "Two-part diagnosis",
+            "summary_rule_or_definition": "Select one pulpal diagnosis and one periapical diagnosis for the tooth."
+        },
+        {
+            "concept": "Normal apical tissues",
+            "summary_rule_or_definition": "No pain to percussion or palpation; intact lamina dura and uniform periodontal ligament space."
+        },
+        {
+            "concept": "Symptomatic apical periodontitis",
+            "summary_rule_or_definition": "Pain on biting and/or percussion or palpation; may or may not have apical radiolucency."
+        },
+        {
+            "concept": "Asymptomatic apical periodontitis",
+            "summary_rule_or_definition": "Apical radiolucency/destruction of apical periodontium of pulpal origin, without clinical symptoms."
+        },
+        {
+            "concept": "Acute apical abscess",
+            "summary_rule_or_definition": "Rapid onset, spontaneous pain, tenderness to pressure, pus formation, and swelling associated with pulpal infection/necrosis."
+        },
+        {
+            "concept": "Chronic apical abscess",
+            "summary_rule_or_definition": "Gradual onset, little or no discomfort, and intermittent pus discharge through a sinus tract associated with pulpal infection/necrosis."
+        },
+        {
+            "concept": "Condensing osteitis",
+            "summary_rule_or_definition": "Diffuse radiopaque lesion at the apex caused by localized bone reaction to low-grade inflammatory stimulus."
+        },
+        {
+            "concept": "Vital pulp + apical radiolucency",
+            "summary_rule_or_definition": "If pulp tests truly normal/vital, do not automatically assign pulpal-origin apical periodontitis; consider non-endodontic causes or limitations of tests."
+        },
+        {
+            "concept": "Previously treated / initiated",
+            "summary_rule_or_definition": "Periapical diagnoses remain possible because signs may reflect persistent/recurrent infection, incomplete treatment, or healing status."
         }
     ],
     "clinicalProfiles": {
@@ -334,7 +935,8 @@
                 "No"
             ],
             "Cold Test Response": [
-                "Normal"
+                "Normal",
+                "Negative"
             ],
             "Heat Test Response": [
                 "Normal"
@@ -1254,5 +1856,183 @@
     "generationGuidelines": {
         "patientDemographics": "When generating questions, all patients must be over 16 years old. Gender should be assigned as either male or female.",
         "questionTemplate": "Patient Profile: {Age}-year-old {Gender}. Chief Complaint: {Chief Complaint}. History of Pain: {History of Pain}. Pain Duration: {Pain Duration}. Pain Character: {Pain Character}. History of Trauma: {History of Trauma}. Previous Endodontic Treatment: {Previous Endodontic Treatment}. Cold Test Response: {Cold Test Response}. Heat Test Response: {Heat Test Response}. EPT Response: {EPT Response}. Percussion Test: {Percussion Test}. Palpation Test: {Palpation Test}. Periodontal Probing: {Periodontal Probing}. Radiographic Findings: {Radiographic Findings}. Swelling / Sinus Tract: {Swelling / Sinus Tract}. What is the final diagnosis?"
-    }
+    },
+    "clinicalAssessmentsAndTests": [
+        {
+            "id": "assessment_HistoryAndChiefComplaint",
+            "assessment_test": "History / chief complaint",
+            "ontology_class": "endo:HistoryAndChiefComplaintAssessment",
+            "positive_abnormal_result_suggests": "Biting pain suggests symptomatic apical periodontitis; rapid swelling and spontaneous pain suggests acute apical abscess; intermittent gum boil/drainage suggests chronic apical abscess.",
+            "helpful_for_periapical_diagnoses_summary": "SAP, CAA, AAA",
+            "helpful_for_periapical_diagnoses": [
+                "Symptomatic apical periodontitis",
+                "Chronic apical abscess",
+                "Acute apical abscess"
+            ],
+            "suggested_diagnoses": [
+                "Symptomatic apical periodontitis",
+                "Acute apical abscess",
+                "Chronic apical abscess"
+            ],
+            "evaluates_pulp_vitality": false
+        },
+        {
+            "id": "assessment_ClinicalExamination",
+            "assessment_test": "Clinical examination",
+            "ontology_class": "endo:ClinicalExamination",
+            "positive_abnormal_result_suggests": "Visible swelling or sinus tract strongly affects the apical diagnosis. Cracks/restorations may explain bite pain or endodontic infection.",
+            "helpful_for_periapical_diagnoses_summary": "CAA, AAA, SAP",
+            "helpful_for_periapical_diagnoses": [
+                "Chronic apical abscess",
+                "Acute apical abscess",
+                "Symptomatic apical periodontitis"
+            ],
+            "suggested_diagnoses": [
+                "Acute apical abscess",
+                "Chronic apical abscess",
+                "Cracked tooth"
+            ],
+            "evaluates_pulp_vitality": false
+        },
+        {
+            "id": "assessment_Percussion",
+            "assessment_test": "Percussion",
+            "ontology_class": "endo:PercussionTest",
+            "positive_abnormal_result_suggests": "Pain/tenderness indicates inflammation of the periodontal ligament/apical tissues, not pulp vitality.",
+            "helpful_for_periapical_diagnoses_summary": "Normal apical tissues, SAP, AAA",
+            "helpful_for_periapical_diagnoses": [
+                "Normal apical tissues",
+                "Symptomatic apical periodontitis",
+                "Acute apical abscess"
+            ],
+            "suggested_diagnoses": [
+                "Symptomatic apical periodontitis"
+            ],
+            "evaluates_pulp_vitality": false
+        },
+        {
+            "id": "assessment_Palpation",
+            "assessment_test": "Palpation",
+            "ontology_class": "endo:PalpationTest",
+            "positive_abnormal_result_suggests": "Tenderness may indicate extension of apical inflammation through cortical bone/periosteal tissues.",
+            "helpful_for_periapical_diagnoses_summary": "Normal apical tissues, SAP, AAA",
+            "helpful_for_periapical_diagnoses": [
+                "Normal apical tissues",
+                "Symptomatic apical periodontitis",
+                "Acute apical abscess"
+            ],
+            "suggested_diagnoses": [
+                "Symptomatic apical periodontitis",
+                "Acute apical abscess"
+            ],
+            "evaluates_pulp_vitality": false
+        },
+        {
+            "id": "assessment_BiteTest",
+            "assessment_test": "Bite test / Tooth Slooth",
+            "ontology_class": "endo:BiteTest",
+            "positive_abnormal_result_suggests": "Pain to biting/pressure supports symptomatic apical periodontitis; pain on release may suggest a crack that needs separate evaluation.",
+            "helpful_for_periapical_diagnoses_summary": "SAP, AAA",
+            "helpful_for_periapical_diagnoses": [
+                "Symptomatic apical periodontitis",
+                "Acute apical abscess"
+            ],
+            "suggested_diagnoses": [
+                "Symptomatic apical periodontitis",
+                "Cracked tooth"
+            ],
+            "evaluates_pulp_vitality": false
+        },
+        {
+            "id": "assessment_SinusTractTracing",
+            "assessment_test": "Sinus tract tracing",
+            "ontology_class": "endo:SinusTractTracing",
+            "positive_abnormal_result_suggests": "Tracing to the apex or root identifies the endodontic source of drainage.",
+            "helpful_for_periapical_diagnoses_summary": "CAA",
+            "helpful_for_periapical_diagnoses": [
+                "Chronic apical abscess"
+            ],
+            "suggested_diagnoses": [
+                "Chronic apical abscess"
+            ],
+            "evaluates_pulp_vitality": false
+        },
+        {
+            "id": "assessment_RadiographicAnalysis",
+            "assessment_test": "Radiographic analysis",
+            "ontology_class": "endo:RadiographicAnalysis",
+            "positive_abnormal_result_suggests": "Apical radiolucency supports asymptomatic apical periodontitis/chronic abscess; radiopacity supports condensing osteitis; normal radiograph does not exclude symptomatic apical periodontitis or acute apical abscess.",
+            "helpful_for_periapical_diagnoses_summary": "All periapical diagnoses",
+            "helpful_for_periapical_diagnoses": [
+                "Normal apical tissues",
+                "Symptomatic apical periodontitis",
+                "Asymptomatic apical periodontitis",
+                "Acute apical abscess",
+                "Chronic apical abscess",
+                "Condensing osteitis"
+            ],
+            "suggested_diagnoses": [
+                "Asymptomatic apical periodontitis",
+                "Chronic apical abscess",
+                "Condensing osteitis",
+                "Symptomatic apical periodontitis",
+                "Acute apical abscess"
+            ],
+            "evaluates_pulp_vitality": false
+        },
+        {
+            "id": "assessment_PulpSensibilityTest",
+            "assessment_test": "Pulp sensibility tests",
+            "ontology_class": "endo:PulpSensibilityTest",
+            "positive_abnormal_result_suggests": "Determines the separate pulpal diagnosis that must be paired with the periapical diagnosis.",
+            "helpful_for_periapical_diagnoses_summary": "All periapical diagnoses",
+            "helpful_for_periapical_diagnoses": [
+                "Normal apical tissues",
+                "Symptomatic apical periodontitis",
+                "Asymptomatic apical periodontitis",
+                "Acute apical abscess",
+                "Chronic apical abscess",
+                "Condensing osteitis"
+            ],
+            "suggested_diagnoses": [
+                "Pulpal diagnosis"
+            ],
+            "evaluates_pulp_vitality": true
+        },
+        {
+            "id": "assessment_PeriodontalEvaluation",
+            "assessment_test": "Periodontal evaluation",
+            "ontology_class": "endo:PeriodontalEvaluation",
+            "positive_abnormal_result_suggests": "Isolated deep narrow probing may suggest vertical root fracture or periodontal-endodontic lesion; generalized deep pockets may point to periodontal disease.",
+            "helpful_for_periapical_diagnoses_summary": "Differential diagnosis for SAP, CAA, AAA, AAP",
+            "helpful_for_periapical_diagnoses": [
+                "Symptomatic apical periodontitis",
+                "Chronic apical abscess",
+                "Acute apical abscess",
+                "Asymptomatic apical periodontitis"
+            ],
+            "suggested_diagnoses": [
+                "Vertical root fracture",
+                "Periodontal-endodontic lesion",
+                "Periodontal disease"
+            ],
+            "evaluates_pulp_vitality": false
+        },
+        {
+            "id": "assessment_SystemicInfectionScreen",
+            "assessment_test": "Systemic infection screen",
+            "ontology_class": "endo:SystemicInfectionScreen",
+            "positive_abnormal_result_suggests": "Fever, malaise, lymphadenopathy, spreading swelling, or airway risk increases urgency and may affect medical management.",
+            "helpful_for_periapical_diagnoses_summary": "AAA",
+            "helpful_for_periapical_diagnoses": [
+                "Acute apical abscess"
+            ],
+            "suggested_diagnoses": [
+                "Acute apical abscess"
+            ],
+            "evaluates_pulp_vitality": false,
+            "increases_urgency": true,
+            "affects_medical_management": true
+        }
+    ]
 }

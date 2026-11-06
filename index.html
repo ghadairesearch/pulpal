@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=12">
+    <link rel="stylesheet" href="style.css?v=19">
 </head>
 <body>
     <div class="app-container">
@@ -22,7 +22,7 @@
         <div class="exam-dashboard glass-panel">
             <div class="exam-progress">
                 <div class="progress-text">
-                    <span id="progress-text-label">Question 1 of ...</span>
+                    <span id="progress-text-label">Question 1 of 30</span>
                     <span id="progress-percentage">0%</span>
                 </div>
                 <div class="progress-bar-bg">
@@ -30,8 +30,6 @@
                 </div>
             </div>
             <div class="exam-stats">
-                <div class="stat-badge correct-badge">Correct: <span id="stat-correct">0</span></div>
-                <div class="stat-badge incorrect-badge">Incorrect: <span id="stat-incorrect">0</span></div>
                 <div class="stat-badge timer-badge">Time: <span id="exam-timer">00:00</span></div>
             </div>
         </div>
@@ -39,22 +37,24 @@
         <main class="quiz-container">
 
             <div class="quiz-card" id="quiz-card">
-                <!-- Upper Section: Question (Left) and Image (Right) -->
+                <!-- Upper Section: Question (Left) and Image Space (Right, kept empty) -->
                 <div class="quiz-upper-section">
                     <div class="question-area">
-                        <div class="progress-indicator" id="question-counter">Question 1</div>
+                        <div class="question-meta">
+                            <div class="progress-indicator" id="question-counter">Question 1</div>
+                        </div>
                         <h2 class="question-text" id="question-text">Loading question...</h2>
                     </div>
                     
                     <div class="image-area">
-                        <div class="image-wrapper">
-                            <img id="question-image" src="" alt="Clinical Case Image">
-                            <div class="image-loader" id="image-loader"></div>
+                        <div class="image-wrapper empty-image-space" id="image-wrapper">
+                            <img id="question-image" src="" alt="" class="hidden">
+                            <div class="image-loader hidden" id="image-loader"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Lower Section: Options and Feedback (Full Width) -->
+                <!-- Lower Section: Options and Feedback Explanations (Full Width) -->
                 <div class="quiz-lower-section">
                     <div class="options-container" id="options-container">
                         <!-- Options will be injected here by JS -->
@@ -65,17 +65,23 @@
                             <span class="feedback-icon" id="feedback-icon"></span>
                             <h3 class="feedback-title" id="feedback-title">Correct!</h3>
                         </div>
-                        <p class="feedback-text" id="feedback-text">Explanation goes here.</p>
+                        <div class="feedback-text" id="feedback-text"></div>
+                        <div class="all-explanations-container" id="all-explanations-container"></div>
                     </div>
+                </div>
 
-                    <button class="btn-primary action-btn hidden" id="next-btn" style="margin-top: 1.5rem;">Next Question</button>
+                <!-- Separate Box: Question & Explanation Rating Form -->
+                <div class="quiz-rating-section glass-panel hidden" id="quiz-rating-section">
+                    <div class="review-form-container" id="review-form-container"></div>
+                    <div class="review-validation-msg hidden" id="review-validation-msg"></div>
+                    <button class="btn-primary action-btn" id="next-btn" style="margin-top: 1.5rem;">Submit Rating & Next Question</button>
                 </div>
             </div>
             
             <div class="completion-screen hidden" id="completion-screen">
                 <div class="completion-card glass-panel">
-                    <h2>Quiz Completed!</h2>
-                    <p>You have finished all available cases.</p>
+                    <h2>Quiz & Review Completed!</h2>
+                    <p>You have finished all available cases and submitted your ratings.</p>
                     <div class="score-display">
                         <span class="score-value" id="final-score">0</span>
                         <span class="score-total" id="total-questions">/ 0</span>
@@ -86,6 +92,6 @@
         </main>
     </div>
 
-    <script src="main.js?v=11"></script>
+    <script src="main.js?v=22"></script>
 </body>
 </html>

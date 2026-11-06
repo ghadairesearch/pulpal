@@ -48,11 +48,18 @@ for i in range(NUM_CASES):
     # Store selected values for feedback
     selected_values = {}
     
-    text = template.replace("{Age}", str(age)).replace("{Gender}", gender)
-    
     for key, values in profile.items():
         selected_value = random.choice(values)
         selected_values[key] = selected_value
+
+    if selected_values.get("Cold Test Response") == "Inconclusive":
+        ept_value = selected_values.get("EPT Response")
+        if not ept_value or ept_value == "blank":
+            selected_values["EPT Response"] = random.choice(kb["parameters"]["EPT Response"])
+    
+    text = template.replace("{Age}", str(age)).replace("{Gender}", gender)
+    
+    for key, selected_value in selected_values.items():
         if not selected_value or selected_value == "blank":
             regex = re.compile(rf"{re.escape(key)}:\s*\{{{re.escape(key)}\}}\.\s*", re.IGNORECASE)
             text = regex.sub("", text)
@@ -81,11 +88,15 @@ for i in range(NUM_CASES):
         print(f"Ollama error on case {i+1}: {e} - Falling back to template.", flush=True)
         
     cold = selected_values.get("Cold Test Response", "N/A")
+    ept = selected_values.get("EPT Response", "N/A")
     perc = selected_values.get("Percussion Test", "N/A")
     radio = selected_values.get("Radiographic Findings", "N/A")
     swell = selected_values.get("Swelling / Sinus Tract", "N/A")
     
-    feedback = f"A cold test of '{cold}' indicates {correct_combo['pulp']}. Percussion: '{perc}' and Radiograph: '{radio}' with Swelling: '{swell}' indicates {correct_combo['apical']}."
+    if cold == "Inconclusive":
+        feedback = f"Because the cold test is inconclusive, the EPT response ('{ept}') is used to support the pulp diagnosis: {correct_combo['pulp']}. Percussion: '{perc}' and Radiograph: '{radio}' with Swelling: '{swell}' indicates {correct_combo['apical']}."
+    else:
+        feedback = f"A cold test of '{cold}' indicates {correct_combo['pulp']}. Percussion: '{perc}' and Radiograph: '{radio}' with Swelling: '{swell}' indicates {correct_combo['apical']}."
     
     case_obj = {
         "id": i + 1,
