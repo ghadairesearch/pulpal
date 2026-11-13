@@ -183,6 +183,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }));
     }
 
+    // Shuffle the displayed choices and remap their explanations to the new keys.
+    function randomizeQuestionOptions(questionData) {
+        const originalOptions = getNormalizedOptions(questionData);
+        if (originalOptions.length < 2) return questionData;
+
+        const originalCorrectKey = getCorrectOptionKey(questionData, originalOptions);
+        const shuffledOptions = [...originalOptions];
+        for (let i = shuffledOptions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+        }
+
+        const displayKeys = ['A', 'B', 'C', 'D'];
+        const remappedOptions = {};
+        const remappedAnalysis = {};
+        const optionOrder = {};
+
+        shuffledOptions.forEach((option, index) => {
+            const newKey = displayKeys[index] || String(index + 1);
+            remappedOptions[newKey] = option.text;
+            optionOrder[newKey] = option.key;
+            if (questionData.option_analysis && questionData.option_analysis[option.key]) {
+                remappedAnalysis[newKey] = questionData.option_analysis[option.key];
+            }
+        });
+
+        return {
+            ...questionData,
+            options: remappedOptions,
+            option_analysis: Object.keys(remappedAnalysis).length > 0
+                ? remappedAnalysis
+                : questionData.option_analysis,
+            correctAnswerIndex: shuffledOptions.findIndex(option => option.key === originalCorrectKey),
+            option_order: optionOrder
+        };
+    }
+
     // Find correct option key ('A', 'B', 'C', or 'D')
     function getCorrectOptionKey(questionData, normalizedOptions) {
         if (questionData.option_analysis) {
@@ -251,7 +288,9 @@ document.addEventListener('DOMContentLoaded', () => {
         questionTextEl.textContent = 'Loading clinical scenario...';
 
         // Fetch Question Data (0-based index)
-        currentQuestionData = await generateQuestionData(currentQuestionIndex - 1);
+        currentQuestionData = randomizeQuestionOptions(
+            await generateQuestionData(currentQuestionIndex - 1)
+        );
         updateProgressUI(currentQuestionData.total_cases_in_db);
 
         // Update Question Header (do not show original difficulty rating)
@@ -349,8 +388,8 @@ document.addEventListener('DOMContentLoaded', () => {
         renderReviewForm(correctKey, normalizedOptions);
 
         nextBtnEl.textContent = currentQuestionIndex >= (currentQuestionData.total_cases_in_db || 30)
-            ? 'Submit Rating & Finish Quiz'
-            : 'Submit Rating & Next Question';
+            ? 'Finish Quiz'
+            : 'Next Question';
     }
 
     function renderAllExplanations(selectedKey, correctKey, normalizedOptions) {
@@ -572,31 +611,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Collect & Validate Review Form before advancing
+    // Collect the optional review form before advancing.
     async function collectAndSubmitReview() {
         const usefulnessEl = reviewFormContainerEl.querySelector('input[name="q_usefulness"]:checked');
         const difficultyEl = reviewFormContainerEl.querySelector('input[name="q_difficulty"]:checked');
         const reasonInputEl = document.getElementById('inappropriate-reason-input');
 
-        const missingFields = [];
-
-        if (!usefulnessEl) {
-            missingFields.push('Question usefulness (Appropriate / Inappropriate)');
-        } else if (usefulnessEl.value === 'Inappropriate' && (!reasonInputEl || !reasonInputEl.value.trim())) {
-            missingFields.push('Explanation for why the question is Inappropriate');
-        }
-
-        if (!difficultyEl) {
-            missingFields.push('Question difficulty rating');
-        }
-
         const distractors = currentNormalizedOptions.filter(opt => opt.key !== currentCorrectKey);
         const distractorRatings = {};
         distractors.forEach(opt => {
             const sel = reviewFormContainerEl.querySelector(`input[name="distractor_quality_${opt.key}"]:checked`);
-            if (!sel) {
-                missingFields.push(`Distractor quality for Option ${opt.key}`);
-            } else {
+            if (sel) {
                 distractorRatings[opt.key] = sel.value;
             }
         });
@@ -604,29 +629,27 @@ document.addEventListener('DOMContentLoaded', () => {
         const explanationRatings = {};
         currentNormalizedOptions.forEach(opt => {
             const sel = reviewFormContainerEl.querySelector(`input[name="explanation_accuracy_${opt.key}"]:checked`);
-            if (!sel) {
-                missingFields.push(`Explanation medical accuracy for Option ${opt.key}`);
-            } else {
+            if (sel) {
                 explanationRatings[opt.key] = sel.value;
             }
         });
 
-        if (missingFields.length > 0) {
-            if (reviewValidationMsgEl) {
-                const itemsHtml = missingFields.map(field => `<li>${field}</li>`).join('');
-                reviewValidationMsgEl.innerHTML = `
-                    <div class="validation-msg-title">Please complete all rating fields before continuing:</div>
-                    <ul class="validation-msg-list">${itemsHtml}</ul>
-                `;
-                reviewValidationMsgEl.classList.remove('hidden');
-                reviewValidationMsgEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }
-            return false;
-        }
-
         if (reviewValidationMsgEl) {
             reviewValidationMsgEl.classList.add('hidden');
         }
+
+        const usefulness = usefulnessEl ? usefulnessEl.value : null;
+        const ratedDifficulty = difficultyEl ? difficultyEl.value : null;
+        const inappropriateExplanation = usefulness === 'Inappropriate' && reasonInputEl
+            ? reasonInputEl.value.trim()
+            : '';
+        const reviewCompleted = Boolean(
+            usefulness &&
+            ratedDifficulty &&
+            Object.keys(distractorRatings).length === distractors.length &&
+            Object.keys(explanationRatings).length === currentNormalizedOptions.length &&
+            (usefulness !== 'Inappropriate' || inappropriateExplanation)
+        );
 
         const reviewSubmittedTime = performance.now();
         const timeToReviewSec = answerSelectedTime
@@ -641,13 +664,17 @@ document.addEventListener('DOMContentLoaded', () => {
             question_difficulty_label: currentQuestionData.difficulty || null,
             selected_option: currentSelectedKey,
             correct_option: currentCorrectKey,
+            selected_option_text: currentNormalizedOptions.find(opt => opt.key === currentSelectedKey)?.text || null,
+            correct_option_text: currentNormalizedOptions.find(opt => opt.key === currentCorrectKey)?.text || null,
+            option_order: Object.fromEntries(currentNormalizedOptions.map(opt => [opt.key, opt.text])),
             answered_correctly: currentSelectedKey === currentCorrectKey,
             time_to_answer_seconds: currentTimeToAnswerSec,
             time_to_review_seconds: timeToReviewSec,
             total_question_time_seconds: totalQuestionTimeSec,
-            usefulness: usefulnessEl.value,
-            inappropriate_explanation: usefulnessEl.value === 'Inappropriate' ? reasonInputEl.value.trim() : '',
-            rated_difficulty: difficultyEl.value,
+            review_completed: reviewCompleted,
+            usefulness,
+            inappropriate_explanation: inappropriateExplanation,
+            rated_difficulty: ratedDifficulty,
             distractor_quality: distractorRatings,
             explanation_medical_accuracy: explanationRatings
         };
